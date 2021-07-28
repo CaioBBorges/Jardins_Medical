@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
-  <div class="">
+  <div class=" ">
     <section class="h-screen">
       <title>JARDINS</title>
       <link rel="icon" href="/favicon.ico" />
@@ -21,33 +21,31 @@ const IndexPage = () => (
             alt="A Gatsby astronaut"
           />
         </div>
-        <div class="pt-5 pr-5">
-          <ul class="right-0 flex flex-row text-xl text-center text-white w-full space-x-3 place-items-center">
-            <a href="#" class="bg-green-900 rounded-full p-5">
+        <div class=" pt-12 pr-20">
+          <ul class="right-0 flex flex-row text-xl text-center  text-white w-full space-x-10 place-items-center">
+            <a href="#" class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest">
               <li class="">INÍCIO</li>
             </a>
-            <a href="#" class="bg-green-900 rounded-full p-5">
+            <a href="#" class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4">
               <li class="">ESTRUTURA</li>
             </a>
-            <a href="#" class="bg-green-900 rounded-full p-5">
+            <a href="#" class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4">
               <li class="">LOCALIZAÇÃO</li>
             </a>
-            <a href="#" class="bg-green-900 rounded-full p-5">
+            <a href="#" class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-4">
               <li class="">CONTATOS</li>
             </a>
           </ul>
         </div>
       </div>
-      <div class="absolute text-5xl leading-loose tracking-widest text-white pt-72 left-8">
+      <div class="absolute text-5xl leading-loose tracking-widest font-mono text-white pt-72 left-8">
         <h1>INOVADOR,</h1>
         <h1>SURPRENDENTE</h1>
         <h1>E TECNOLÓGICO</h1>
       </div>
       <div class="absolute bottom-0 justify-items-center w-full px-5">
-        <div
-          class="px-5 flex flex-row leading-loose tracking-widest text-white bg-green-900 divide-x
-        divide-gray divide-opacity-25 rounded-xl text-base text-center justify-items-center"
-        >
+        <div class="px-5 flex flex-row leading-loose tracking-widest text-white bg-green-dark divide-x
+          divide-gray divide-opacity-25 rounded-xl text-base text-center justify-items-center font-mono">
           <p class="p-5">SEDE EMPRESARIAL</p>
           <p class="p-5">ALTA RENTABILIDADEL</p>
           <p class="p-5">VALORIZAÇÃO IMOBILIÁRIA</p>
@@ -67,10 +65,10 @@ const IndexPage = () => (
         />
       </div>
       <div class="">
-        <h2 class="text-5xl leading-relaxed tracking-widest text-justify text-black">
+        <h2 class="text-5xl leading-relaxed tracking-widest font-mono text-justify text-black">
           UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
         </h2>
-        <p class="text-2xl text-justify break-words mt-14">
+        <p class="text-2xl text-justify break-words mt-14 font-mono">
           O Jardins Medical traz um novo conceito de excelência, com espaços
           amplos de atendimento, localização privilegiada E arquitetura
           inovadora, Contará com profissionais que são referência em suas áreas.
@@ -79,6 +77,13 @@ const IndexPage = () => (
           exclusivo da área de saúde.
         </p>
       </div>
+      <div class="bg-green-dark  absolute bottom-0 -mb-20 right-0">
+        <h1></h1>
+      </div>
+    </section>
+    
+    <section>
+
     </section>
   </div>
 )
