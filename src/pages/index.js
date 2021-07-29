@@ -1,13 +1,28 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import bg3 from "../images/bg3.png"
+import ola1 from "../images/ola1.svg"
+import inovador from "../images/inovador.svg"
 
 const IndexPage = () => (
   <div class=" ">
-    <section class="">
+    <section
+      class=""
+      StaticImage
+      src="../images/inovador.svg"
+      class="z-0"
+      style={{
+        backgroundImage: `url(${inovador})`,
+        backgroundRepeat: `no-repeat`,
+        height: `100vh`,
+        weight: `100vw`,
+        backgroundAttachment: `local`,
+        backgroundSize: `100%`,
+      }}
+    >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <StaticImage src="../images/inovador.svg" class="w-full z-0" />
       <div class="flex flex-row justify-between w-full z-10">
         <StaticImage
           class="z-10 w-40"
@@ -18,7 +33,10 @@ const IndexPage = () => (
         />
         <div class="pt-12 pr-12 z-10 bg-transparent">
           <ul class="right-0 flex flex-row text-xl text-center text-white w-full space-x-10 place-items-center">
-            <a href="#" class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest">
+            <a
+              href="#"
+              class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest"
+            >
               <li class="">INÍCIO</li>
             </a>
             <a
@@ -48,18 +66,15 @@ const IndexPage = () => (
         <h1 class="z-10">E TECNOLÓGICO</h1>
       </div>
       <div class=" justify-items-center px-20">
-        <div
-          class="px-5 right-96 grid grid-cols-4 w-full h-30  leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-gray divide-opacity-25 rounded-xl text-center text-2xl font-mono z-10 justify-evenly"
-        >
-          <p class="p-5 z-10">SEDE EMPRESARIAL</p>
-          <p class="p-5 z-10">ALTA RENTABILIDADE</p>
-          <p class="p-5 z-10">VALORIZAÇÃO IMOBILIÁRIA</p>
-          <p class="p-5 z-10">CONTRATOS ESTICADOS</p>
+        <div class="px-5 grid grid-cols-4 w-full h-30 leading-loose tracking-widest text-white bg-green-dark divide-x divide-gray divide-opacity-25 rounded-xl text-center text-2xl font-mono z-10 justify-evenly items-center">
+          <p class="z-10">SEDE EMPRESARIAL</p>
+          <p class="z-10">ALTA RENTABILIDADE</p>
+          <p class="z-10">VALORIZAÇÃO IMOBILIÁRIA</p>
+          <p class="z-10">CONTRATOS ESTICADOS</p>
         </div>
       </div>
     </section>
-    <section class="flex flex-row w-full -mt-5 px-10 h-screen bg-gradient-to-tl from-gray-100 to-gray-300 items-center">
+    <section class="flex flex-row w-full -mt-5 px-10 h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 items-center">
       <div class="px-20">
         <StaticImage
           src="../images/Mask Group.png"
@@ -80,31 +95,29 @@ const IndexPage = () => (
           exclusivo da área de saúde.
         </p>
       </div>
-      <div>
-        <StaticImage
-          src="../images/in.png"
-          class="w-full -mt-52 left-0 top-100 h-screen z-0"
-        />
-        <div class="text-white font-mono grid grid-cols-2 grid-rows-5  w-99 h-98 top-96 -ml-98 mt-98">
-          <StaticImage
-            src="../images/ola1.svg"
-            class="grid grid-cols-2 grid-rows-5 h-98 w-98"
-          />
-          <h1 class="text-5xl w-full col-span-2 p-7">
-            O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
-          </h1>
-          <div class="flex flex-row">
-            <StaticImage
-              src="../images/compass.png"
-              class="h-40 w-40 z-50"
-            />
-            <div></div>
+    </section>
+    <section style={{ backgroundImage: `url(${bg3})` }} class="w-full">
+      <div
+        style={{
+          backgroundImage: `url(${ola1})`,
+          width: `100v`,
+          height: `100v`,
+          repeat: `no-repeat`,
+        }}
+        class="text-white font-mono grid grid-cols-2 grid-rows-5 right-0 w-56 z-10"
+      >
+        <h1 class="text-white text-5xl w-full col-span-2 p-7">
+          O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
+        </h1>
+        <div class="flex flex-row z-20">
+          <StaticImage src="../images/compass.png" class="h-40 w-40 z-30" />
+          <div class="text-white">
+            <h1>5635,26</h1>
+            <h2>PARA SALAS MEDICAS</h2>
           </div>
         </div>
       </div>
     </section>
-
-    <section></section>
   </div>
 )
 
