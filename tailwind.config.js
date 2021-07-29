@@ -6,6 +6,8 @@ module.exports = {
       spacing: {
         '30' : '125px',
         '100' : '1178px', 
+        '99' : '598px',
+        '98' : '714px',
       },
       colors: {
         'green-dark': '#033415',

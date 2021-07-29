@@ -9,7 +9,7 @@ const IndexPage = () => (
       <link rel="icon" href="..\images\favicon.ico" />
       <StaticImage
         src="../images/inovador.svg"
-        class="w-full absolute bg-cover z-0"
+        class="w-full h-full absolute bg-cover z-0"
       />
       <div class="flex flex-row justify-between w-full z-10">
         <div class="w-40 z-10">
@@ -21,7 +21,7 @@ const IndexPage = () => (
             alt="A Gatsby astronaut"
           />
         </div>
-        <div class=" pt-12 pr- z-10">
+        <div class="pt-12 pr- z-10">
           <ul class="right-0 flex flex-row text-xl text-center text-white w-full space-x-10 place-items-center">
             <a href="#" class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest">
               <li class="">INÍCIO</li>
@@ -38,14 +38,14 @@ const IndexPage = () => (
           </ul>
         </div>
       </div>
-      <div class="text-5xl leading-loose tracking-widest font-mono text-white pt-72 left-8 z-10">
+      <div class="text-6xl leading-loose tracking-widest font-mono text-white pt-48 left-8 absolute">
         <h1 class="z-10">INOVADOR,</h1>
         <h1 class="z-10">SURPRENDENTE</h1>
         <h1 class="z-10">E TECNOLÓGICO</h1>
       </div>
-      <div class="-bottom-10 w-full justify-items-center h-24">
-        <div class="px-5 absolute mt-6 flex flex-row leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-gray divide-opacity-25 rounded-xl text-center text-xl font-mono">
+      <div class=" justify-items-center">
+        <div class="px-5 bottom-1 right-96 absolute grid grid-cols-4 w-100 h-30  leading-loose tracking-widest text-white bg-green-dark divide-x
+          divide-gray divide-opacity-25 rounded-xl text-center text-2xl font-mono">
           <p class="p-5 z-10">SEDE EMPRESARIAL</p>
           <p class="p-5 z-10">ALTA RENTABILIDADE</p>
           <p class="p-5 z-10">VALORIZAÇÃO IMOBILIÁRIA</p>
@@ -53,7 +53,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section class="flex flex-row w-full px-10 h-screen bg-gradient-to-tl from-gray-100 to-gray-300 items-center z-20">
+    <section class="flex flex-row w-full -mt-5 px-10 h-screen bg-gradient-to-tl from-gray-100 to-gray-300 items-center absolute">
       <div class="px-20">
         <StaticImage
           src="../images/Mask Group.png"
@@ -75,9 +75,26 @@ const IndexPage = () => (
           exclusivo da área de saúde.
         </p>
       </div>
-      <div class="bg-green-dark bottom-0 -mb-20 right-0">
-        <h1></h1>
+      <div>
+      <StaticImage
+        src="../images/in.png"
+        class="w-screen absolute -mt-52 left-0 top-100 h-screen z-0"
+      />
+        <div class="text-white font-mono grid grid-cols-2 grid-rows-5  w-99 h-98 top-96 -ml-98 absolute  mt-98">
+        <StaticImage
+        src="../images/ola1.svg"
+        class="grid grid-cols-2 grid-rows-5 h-98 absolute w-99"
+      />
+          <h1 class="text-5xl w-full col-span-2 absolute p-7">O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?</h1>
+          <div class="flex flex-row">
+            <div>
+              
+            </div>
+
+          </div>
+        </div>
       </div>
+      
     </section>
     
     <section>
