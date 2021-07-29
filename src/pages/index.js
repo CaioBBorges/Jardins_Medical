@@ -4,48 +4,54 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
   <div class=" ">
-    <section class="h-screen">
+    <section class="">
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <StaticImage
-        src="../images/inovador.svg"
-        class="w-full h-full absolute bg-cover z-0"
-      />
+      <StaticImage src="../images/inovador.svg" class="w-full z-0" />
       <div class="flex flex-row justify-between w-full z-10">
-        <div class="w-40 z-10">
-          <StaticImage
-            src="../images/logo.svg"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
-          />
-        </div>
-        <div class="pt-12 pr- z-10">
+        <StaticImage
+          class="z-10 w-40"
+          src="../images/logo.svg"
+          width={300}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+        />
+        <div class="pt-12 pr-12 z-10 bg-transparent">
           <ul class="right-0 flex flex-row text-xl text-center text-white w-full space-x-10 place-items-center">
             <a href="#" class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest">
               <li class="">INÍCIO</li>
             </a>
-            <a href="#" class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4">
+            <a
+              href="#"
+              class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            >
               <li class="">ESTRUTURA</li>
             </a>
-            <a href="#" class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4">
+            <a
+              href="#"
+              class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            >
               <li class="">LOCALIZAÇÃO</li>
             </a>
-            <a href="#" class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-4">
+            <a
+              href="#"
+              class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-4"
+            >
               <li class="">CONTATOS</li>
             </a>
           </ul>
         </div>
       </div>
-      <div class="text-6xl leading-loose tracking-widest font-mono text-white pt-48 left-8 absolute">
+      <div class="text-6xl leading-loose tracking-widest font-mono text-white pt-48 left-8 z-10">
         <h1 class="z-10">INOVADOR,</h1>
         <h1 class="z-10">SURPRENDENTE</h1>
         <h1 class="z-10">E TECNOLÓGICO</h1>
       </div>
-      <div class=" justify-items-center">
-        <div class="px-5 bottom-1 right-96 absolute grid grid-cols-4 w-100 h-30  leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-gray divide-opacity-25 rounded-xl text-center text-2xl font-mono">
+      <div class=" justify-items-center px-20">
+        <div
+          class="px-5 right-96 grid grid-cols-4 w-full h-30  leading-loose tracking-widest text-white bg-green-dark divide-x
+          divide-gray divide-opacity-25 rounded-xl text-center text-2xl font-mono z-10 justify-evenly"
+        >
           <p class="p-5 z-10">SEDE EMPRESARIAL</p>
           <p class="p-5 z-10">ALTA RENTABILIDADE</p>
           <p class="p-5 z-10">VALORIZAÇÃO IMOBILIÁRIA</p>
@@ -53,13 +59,12 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section class="flex flex-row w-full -mt-5 px-10 h-screen bg-gradient-to-tl from-gray-100 to-gray-300 items-center absolute">
+    <section class="flex flex-row w-full -mt-5 px-10 h-screen bg-gradient-to-tl from-gray-100 to-gray-300 items-center">
       <div class="px-20">
         <StaticImage
           src="../images/Mask Group.png"
-          class="z-20"
-          width={2500}
-          quality={95}
+          class="z-20 w-full"
+          quality={100}
         />
       </div>
       <div class="z-20">
@@ -76,30 +81,30 @@ const IndexPage = () => (
         </p>
       </div>
       <div>
-      <StaticImage
-        src="../images/in.png"
-        class="w-screen absolute -mt-52 left-0 top-100 h-screen z-0"
-      />
-        <div class="text-white font-mono grid grid-cols-2 grid-rows-5  w-99 h-98 top-96 -ml-98 absolute  mt-98">
         <StaticImage
-        src="../images/ola1.svg"
-        class="grid grid-cols-2 grid-rows-5 h-98 absolute w-99"
-      />
-          <h1 class="text-5xl w-full col-span-2 absolute p-7">O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?</h1>
+          src="../images/in.png"
+          class="w-full -mt-52 left-0 top-100 h-screen z-0"
+        />
+        <div class="text-white font-mono grid grid-cols-2 grid-rows-5  w-99 h-98 top-96 -ml-98 mt-98">
+          <StaticImage
+            src="../images/ola1.svg"
+            class="grid grid-cols-2 grid-rows-5 h-98 w-98"
+          />
+          <h1 class="text-5xl w-full col-span-2 p-7">
+            O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
+          </h1>
           <div class="flex flex-row">
-            <div>
-              
-            </div>
-
+            <StaticImage
+              src="../images/compass.png"
+              class="h-40 w-40 z-50"
+            />
+            <div></div>
           </div>
         </div>
       </div>
-      
     </section>
-    
-    <section>
 
-    </section>
+    <section></section>
   </div>
 )
 
