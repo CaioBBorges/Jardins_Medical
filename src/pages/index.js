@@ -6,7 +6,7 @@ const IndexPage = () => (
   <div class=" ">
     <section class="h-screen">
       <title>JARDINS</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="..\images\favicon.ico" />
       <StaticImage
         src="../images/inovador.svg"
         class="w-screen absolute bg-cover"
@@ -43,11 +43,11 @@ const IndexPage = () => (
         <h1>SURPRENDENTE</h1>
         <h1>E TECNOLÓGICO</h1>
       </div>
-      <div class="absolute bottom-0 justify-items-center w-full px-5">
-        <div class="px-5 flex flex-row leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-gray divide-opacity-25 rounded-xl text-base text-center justify-items-center font-mono">
+      <div class="absolute bottom-2 right-96 justify-items-center h-30 w-100">
+        <div class="px-5 absolute mt-6 flex flex-row leading-loose tracking-widest text-white bg-green-dark divide-x
+          divide-gray divide-opacity-25 rounded-xl text-center text-xl font-mono">
           <p class="p-5">SEDE EMPRESARIAL</p>
-          <p class="p-5">ALTA RENTABILIDADEL</p>
+          <p class="p-5">ALTA RENTABILIDADE</p>
           <p class="p-5">VALORIZAÇÃO IMOBILIÁRIA</p>
           <p class="p-5">CONTRATOS ESTICADOS</p>
         </div>
