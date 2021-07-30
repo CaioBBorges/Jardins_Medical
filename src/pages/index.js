@@ -252,7 +252,7 @@ const IndexPage = () => (
       <h1 class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10  w-full">
       100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
       </h1>
-      <div class="grid grid-cols-3 ml-40 py-8 bg-green-dark w-100 h-44 rounded-lg ">
+      <div class="grid grid-cols-3 ml-96 py-8 bg-green-dark w-100 h-44 rounded-lg ">
         <div class=" ml-36">
             <StaticImage
                 src="../images/anvisa.svg"
