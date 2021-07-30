@@ -6,9 +6,14 @@ import ola1 from "../images/ola1.svg"
 import inovador from "../images/inovador.svg"
 import bg4 from "../images/bg4.png"
 import Header from "../components/header"
+import auditorio from "../images/auditorio.png"
+import lobby from "../images/lobby.png" 
+import rooftop from "../images/rooftop.png"
+import branco from "../images/branco.png"
+import footer from "../images/footer.png"
 
 const IndexPage = () => (
-  <div class=" ">
+  <div class="">
     <section
       class="bg-cover bg-local bg-no-repeat	bg-clip-border"
       style={{ backgroundImage: `url(${inovador})` }}
@@ -18,7 +23,7 @@ const IndexPage = () => (
       <div class="h-screen">
         <Header />
         <div class="pt-48 left-20 w-4/6">
-          <div class="text-6xl font-mono text-justify text-white ">
+          <div class="text-6xl ml-44 leading-relaxed tracking-widest font-mono text-justify text-white ">
             <h1 class="text-justify	">INOVADOR,</h1>
             <h1 class="text-justify	">SURPRENDENTE</h1>
             <h1 class="text-justify	">E TECNOLÓGICO</h1>
@@ -27,7 +32,7 @@ const IndexPage = () => (
         <div class="justify-items-center px-20 absolute -bottom-14 items-center">
           <div
             class="px-5 grid grid-cols-4 w-full h-30 leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-green-500 divide-opacity-25 divide-2 rounded-xl text-center text-2xl font-mono justify-evenly items-center"
+          divide-green-500 divide-opacity-25 ml-24 divide-2 rounded-xl text-center text-2xl font-mono justify-evenly items-center"
           >
             <p class="">SEDE EMPRESARIAL</p>
             <p class="">ALTA RENTABILIDADE</p>
@@ -157,18 +162,142 @@ const IndexPage = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-5/6 align- justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat w-full h-5/6  justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${bg4})`,
       }}
     >
-      <h1 class="text-white font-mono text-9xl text-justify font-thin	pt-80 w-full">
-        A MELHOR <br /> EXPERIENCIA
+      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin	pt-80 w-full">
+        A MELHOR <br /> EXPERIÊNCIA
       </h1>
-      <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-5 mt-5 mb-80">
-        SAIBA MAIS
-      </button>
+      <div class=" ml-64">
+        <button class="bg-green-dark ml-96 rounded-full h-20 text-white w-1/3 text-center font-mono p-5 mt-5 mb-80">
+          SAIBA MAIS
+        </button>
+      </div>
     </section>
+    <section 
+      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
+      style={{
+        backgroundImage: `url(${lobby})`,
+      }}> 
+      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin pt-60 w-full">
+        LOBBY
+      </h1>
+      <p class=" text-center text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest ">LUXUOSO LOBBY PARA PRESERVAR O ATENDENDIMENTO</p>
+    </section>
+    <section 
+      class="bg-cover bg-center bg-no-repeat w-full h-101 justify-center bg-clip-border"
+      style={{
+        backgroundImage: `url(${rooftop})`,
+      }}> 
+      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl px-12 font-thin pt-60 w-full">
+      ROOFTOP
+      </h1>
+      <p class="  text-white font-bold text-3xl font-mono leading-relaxed px-14 tracking-widest ">CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E CONFORTO COM UMA ÁREA DE EVENTOS</p>
+    </section>
+    <section 
+      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
+      style={{
+        backgroundImage: `url(${auditorio})`,
+      }}> 
+      <h1 class="text-white px-12 font-mono  tracking-widest text-9xl text-right font-thin pt-40  w-full">
+      AUDITÓRIO <br /> PRINCIPAL
+      </h1>
+      <p class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest ">AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA SAÚDE , TRAZENDO A JOÃO <br /> PESSOA UM LOCAL DE CAPACITAÇÃO E APRIMORAMENTO</p>
+    </section>
+    <section 
+      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
+      style={{
+        backgroundImage: `url(${branco})`,
+      }}> 
+      <h1 class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10  w-full">
+      100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
+      </h1>
+      <div class="grid grid-cols-3 ml-96 py-8 bg-green-dark w-100 h-44 rounded-lg ">
+        <div class=" ml-36">
+            <StaticImage
+                src="../images/anvisa.svg"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+              />     
+          </div>
+          <div class=" ml-36">
+            <StaticImage
+                src="../images/logo-abnt.svg"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+              />     
+          </div>
+          <div class=" ml-36">
+            <StaticImage
+                src="../images/ans.svg"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+              />     
+          </div>
+      </div>   
+    </section >
+    <footer 
+      class="bg-cover space-x-28 py-5 grid grid-cols-5 h-28 bg-center bg-no-repeat  justify-center bg-clip-border"
+      style={{
+      backgroundImage: `url(${footer})`,
+      }}> 
+      <a href="#">
+        <div class=" ml-36">
+          <StaticImage
+              src="../images/face.svg"
+              quality={100}
+              placeholder="blurred"
+              layout="fixed"
+            />     
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/tt.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/insta.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">    
+        <div>
+        <StaticImage
+            src="../images/linkedin.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />  
+        </div> 
+      </a>
+      <a href="#">     
+        <div> 
+          <StaticImage
+            src="../images/youtube.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>    
+
+    </footer>
   </div>
 )
 
