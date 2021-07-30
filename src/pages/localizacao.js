@@ -7,34 +7,21 @@ import inovador from "../images/inovador.svg"
 import bg4 from "../images/bg4.png"
 import Header from "../components/header"
 
-const IndexPage = () => (
+const localizacao = () => (
   <div class=" ">
     <section
-      class="bg-cover bg-local bg-no-repeat	bg-clip-border"
-      style={{ backgroundImage: `url(${inovador})` }}
+      class="bg-cover bg-local bg-no-repeat	bg-clip-border h-full place-content-center"
+      style={{ backgroundImage: `url(${inovador})` , resize: `both`,
+      overflow: `hidden`}}
     >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <div class="h-screen">
-        <Header />
-        <div class="pt-48 left-20 w-4/6">
-          <div class="text-6xl font-mono text-justify text-white ">
-            <h1 class="text-justify	">INOVADOR,</h1>
-            <h1 class="text-justify	">SURPRENDENTE</h1>
-            <h1 class="text-justify	">E TECNOLÓGICO</h1>
-          </div>
-        </div>
-        <div class="justify-items-center px-20 absolute -bottom-14 items-center">
-          <div
-            class="px-5 grid grid-cols-4 w-full h-30 leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-green-500 divide-opacity-25 divide-2 rounded-xl text-center text-2xl font-mono justify-evenly items-center"
-          >
-            <p class="">SEDE EMPRESARIAL</p>
-            <p class="">ALTA RENTABILIDADE</p>
-            <p class="">VALORIZAÇÃO IMOBILIÁRIA</p>
-            <p class="">CONTRATOS ESTICADOS</p>
-          </div>
-        </div>
+      <Header/>
+      <div class="">
+        <h1 class="pt-36 w-full text-8xl text-white font-mono font-thin text-center px-24 pb-100">
+          ESTRUTURA PERFEITA PARA VOCÊ FOCAR NO QUE REALMENTE IMPORTA:<br/>SEU
+          PACIENTE.
+        </h1>
       </div>
     </section>
     <section class="grid grid-cols-2 w-full h-screen px-10 bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 items-center">
@@ -172,4 +159,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+export default localizacao
