@@ -17,24 +17,52 @@ function Header() {
           <Link
             to="/"
             class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest"
+            activeStyle={{
+              color: `#033415`,
+              backgroundColor: `#ffffff`,
+              padding: `1rem`,
+              width: `12rem`,
+              borderRadius: `9999px`,
+            }}
           >
             <li class="">INÍCIO</li>
           </Link>
           <Link
             to="/estrutura"
             class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            activeStyle={{
+              color: `#033415`,
+              backgroundColor: `#ffffff`,
+              padding: `1rem`,
+              width: `12rem`,
+              borderRadius: `9999px`,
+            }}
           >
             <li class="">ESTRUTURA</li>
           </Link>
           <Link
             to="/localizacao"
             class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            activeStyle={{
+              color: `#033415`,
+              backgroundColor: `#ffffff`,
+              padding: `1rem`,
+              width: `12rem`,
+              borderRadius: `9999px`,
+            }}
           >
             <li class="">LOCALIZAÇÃO</li>
           </Link>
           <Link
             to="/contato"
             class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-4"
+            activeStyle={{
+              color: `#033415`,
+              backgroundColor: `#ffffff`,
+              padding: `1rem`,
+              width: `12rem`,
+              borderRadius: `9999px`,
+            }}
           >
             <li class="">CONTATOS</li>
           </Link>

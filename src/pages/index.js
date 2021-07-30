@@ -7,7 +7,7 @@ import inovador from "../images/inovador.svg"
 import bg4 from "../images/bg4.png"
 import Header from "../components/header"
 import auditorio from "../images/auditorio.png"
-import lobby from "../images/lobby.png" 
+import lobby from "../images/lobby.png"
 import rooftop from "../images/rooftop.png"
 import branco from "../images/branco.png"
 import footer from "../images/footer.png"
@@ -22,17 +22,38 @@ const IndexPage = () => (
       <link rel="icon" href="..\images\favicon.ico" />
       <div class="h-screen">
         <Header />
-        <div class="pt-48 left-20 w-4/6">
-          <div class="text-6xl ml-44 leading-relaxed tracking-widest font-mono text-justify text-white ">
-            <h1 class="text-justify	">INOVADOR,</h1>
-            <h1 class="text-justify	">SURPRENDENTE</h1>
-            <h1 class="text-justify	">E TECNOLÓGICO</h1>
+        <div class="pt-48 w-4/6">
+          <div class="text-6xl px-20 leading-relaxed tracking-widest font-mono text-justify text-white ">
+            <h1
+              style={{
+                letterSpacing: `0.63em`,
+                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+              }}
+            >
+              INOVADOR,
+            </h1>
+            <h1
+              style={{
+                letterSpacing: `0.63em`,
+                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+              }}
+            >
+              SURPRENDENTE
+            </h1>
+            <h1
+              style={{
+                letterSpacing: `0.63em`,
+                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+              }}
+            >
+              E TECNOLÓGICO
+            </h1>
           </div>
         </div>
         <div class="justify-items-center px-20 absolute -bottom-14 items-center">
           <div
             class="px-5 grid grid-cols-4 w-full h-30 leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-green-500 divide-opacity-25 ml-24 divide-2 rounded-xl text-center text-2xl font-mono justify-evenly items-center"
+          divide-green-500 divide-opacity-25 divide-2 rounded-xl text-center text-2xl font-mono justify-evenly items-center"
           >
             <p class="">SEDE EMPRESARIAL</p>
             <p class="">ALTA RENTABILIDADE</p>
@@ -47,10 +68,34 @@ const IndexPage = () => (
         <StaticImage src="../images/Mask Group.png" class="" quality={100} />
       </div>
       <div class="w">
-        <h2 class="text-7xl md:text-5xl sm:text-4xl xs:text-4xl leading-relaxed tracking-widest font-mono text-black text-right">
+        <h2
+          class="text-7xl md:text-5xl sm:text-4xl xs:text-4xl leading-relaxed tracking-widest font-mono text-black text-right"
+          style={{
+            width: `676.62px`,
+            height: `187px`,
+            left: `723.3px`,
+            top: `917.09px`,
+            fontSize: `36px`,
+            lineHeight: `171.2%`,
+            textAlign: `right`,
+            letterSpacing: `0.63em`,
+            color: `#2E2E2E`,
+          }}
+        >
           UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
         </h2>
-        <p class="text-2xl md:text-xl sm:text-sm xs:text-sm break-words mt-14 font-mono text-center">
+        <p
+          class="text-2xl md:text-xl sm:text-sm xs:text-sm break-words mt-14 font-mono text-center"
+          style={{
+            width: `676.62px`,
+            height: `342.83px`,
+            fontSize: `18px`,
+            lineHeight: `171.2%`,
+            textAlign: `justify`,
+            letterSpacing: `0.48em`,
+            color: `#2E2E2E`,
+          }}
+        >
           O Jardins Medical traz um novo conceito de excelência, com espaços
           amplos de atendimento, localização privilegiada E arquitetura
           inovadora, Contará com profissionais que são referência em suas áreas.
@@ -79,7 +124,16 @@ const IndexPage = () => (
           backgroundSize: `100%`,
         }}
       >
-        <h1 class="text-white text-5xl w-full col-span-4 p-5 text-justify">
+        <h1
+          class="text-white text-5xl w-full col-span-4 p-5 text-justify"
+          style={{
+            fontSize: `36px`,
+            lineHeight: `147.7%`,
+            letterSpacing: `0.195em`,
+            color: `#FFFFFF`,
+            textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+          }}
+        >
           O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
         </h1>
         <StaticImage
@@ -167,93 +221,180 @@ const IndexPage = () => (
         backgroundImage: `url(${bg4})`,
       }}
     >
-      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin	pt-80 w-full">
+      <h1
+        class="text-white font-mono text-9xl text-center font-thin	pt-80 w-full"
+        style={{
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#`,
+          textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+        }}
+      >
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
       <div class=" ml-64">
-        <button class="bg-green-dark ml-96 rounded-full h-20 text-white w-1/3 text-center font-mono p-5 mt-5 mb-80">
+        <button class="bg-green-dark ml-96 rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
           SAIBA MAIS
         </button>
       </div>
     </section>
-    <section 
+    <section
       class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${lobby})`,
-      }}> 
-      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin pt-60 w-full">
+      }}
+    >
+      <h1
+        class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin pt-60 w-full"
+        style={{
+          fontSize: `48px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+        }}
+      >
         LOBBY
       </h1>
-      <p class=" text-center text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest ">LUXUOSO LOBBY PARA PRESERVAR O ATENDENDIMENTO</p>
+      <p
+        class=" text-center text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest "
+        style={{
+          fontSize: `14px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+        }}
+      >
+        LUXUOSO LOBBY PARA PRESERVAR O ATENDENDIMENTO
+      </p>
     </section>
-    <section 
+    <section
       class="bg-cover bg-center bg-no-repeat w-full h-101 justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${rooftop})`,
-      }}> 
-      <h1 class="text-white font-mono leading-relaxed tracking-widest text-9xl px-12 font-thin pt-60 w-full">
-      ROOFTOP
+      }}
+    >
+      <h1
+        class="text-white font-mono leading-relaxed tracking-widest text-9xl px-12 font-thin pt-60 w-full"
+        style={{
+          fontSize: `48px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+        }}
+      >
+        ROOFTOP
       </h1>
-      <p class="  text-white font-bold text-3xl font-mono leading-relaxed px-14 tracking-widest ">CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E CONFORTO COM UMA ÁREA DE EVENTOS</p>
+      <p
+        class="  text-white font-bold text-3xl font-mono leading-relaxed px-14 tracking-widest "
+        style={{
+          fontSize: `14px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+        }}
+      >
+        CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E
+        CONFORTO COM UMA ÁREA DE EVENTOS
+      </p>
     </section>
-    <section 
+    <section
       class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${auditorio})`,
-      }}> 
-      <h1 class="text-white px-12 font-mono  tracking-widest text-9xl text-right font-thin pt-40  w-full">
-      AUDITÓRIO <br /> PRINCIPAL
+      }}
+    >
+      <h1
+        class="text-white px-12 font-mono  tracking-widest text-9xl text-right font-thin pt-40  w-full"
+        style={{
+          fontSize: `48px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+        }}
+      >
+        AUDITÓRIO <br /> PRINCIPAL
       </h1>
-      <p class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest ">AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA SAÚDE , TRAZENDO A JOÃO <br /> PESSOA UM LOCAL DE CAPACITAÇÃO E APRIMORAMENTO</p>
+      <p
+        class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest "
+        style={{
+          fontSize: `14px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.63em`,
+          color: `#FFFFFF`,
+          textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+        }}
+      >
+        AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
+        SAÚDE , TRAZENDO A JOÃO <br /> PESSOA UM LOCAL DE CAPACITAÇÃO E
+        APRIMORAMENTO
+      </p>
     </section>
-    <section 
-      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
-      style={{
-        backgroundImage: `url(${branco})`,
-      }}> 
-      <h1 class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10  w-full">
-      100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
+    <section
+      class="bg-cover bg-center bg-no-repeat w-full h-screen align-center justify-center bg-clip-border"
+    >
+      <h1
+        class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10  w-full"
+        style={{
+          fontSize: `48px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.54em`,
+        }}
+      >
+        100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
       </h1>
-      <div class="grid grid-cols-3 ml-96 py-8 bg-green-dark w-100 h-44 rounded-lg ">
-        <div class=" ml-36">
-            <StaticImage
-                src="../images/anvisa.svg"
-                quality={100}
-                placeholder="blurred"
-                layout="fixed"
-              />     
-          </div>
-          <div class=" ml-36">
-            <StaticImage
-                src="../images/logo-abnt.svg"
-                quality={100}
-                placeholder="blurred"
-                layout="fixed"
-              />     
-          </div>
-          <div class=" ml-36">
-            <StaticImage
-                src="../images/ans.svg"
-                quality={100}
-                placeholder="blurred"
-                layout="fixed"
-              />     
-          </div>
-      </div>   
-    </section >
-    <footer 
-      class="bg-cover space-x-28 py-5 grid grid-cols-5 h-28 bg-center bg-no-repeat  justify-center bg-clip-border"
-      style={{
-      backgroundImage: `url(${footer})`,
-      }}> 
-      <a href="#">
+      <div class="grid grid-cols-3 ml-96 py-8 bg-green-dark w-100 h-44 rounded-xl ">
         <div class=" ml-36">
           <StaticImage
-              src="../images/face.svg"
-              quality={100}
-              placeholder="blurred"
-              layout="fixed"
-            />     
+            src="../images/anvisa.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+        <div class=" ml-36">
+          <StaticImage
+            src="../images/logo-abnt.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+        <div class=" ml-36">
+          <StaticImage
+            src="../images/ans.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-cover py-5 grid grid-cols-5 h-28 bg-center bg-no-repeat  justify-beetwen bg-clip-border"
+      style={{
+        backgroundImage: `url(${footer})`,
+      }}
+    >
+      <a href="#">
+        <div class="">
+          <StaticImage
+            src="../images/face.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
         </div>
       </a>
       <a href="#">
@@ -276,18 +417,18 @@ const IndexPage = () => (
           />
         </div>
       </a>
-      <a href="#">    
+      <a href="#">
         <div>
-        <StaticImage
+          <StaticImage
             src="../images/linkedin.svg"
             quality={100}
             placeholder="blurred"
             layout="fixed"
-          />  
-        </div> 
+          />
+        </div>
       </a>
-      <a href="#">     
-        <div> 
+      <a href="#">
+        <div>
           <StaticImage
             src="../images/youtube.svg"
             quality={100}
@@ -295,8 +436,7 @@ const IndexPage = () => (
             layout="fixed"
           />
         </div>
-      </a>    
-
+      </a>
     </footer>
   </div>
 )
