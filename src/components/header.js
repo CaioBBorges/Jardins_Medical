@@ -16,11 +16,11 @@ function Header() {
         <ul class="right-0 flex flex-row text-xl text-center text-white w-full space-x-10 sm:space-x-8 xs:space-x-6 place-items-center">
           <Link
             to="/"
-            class="bg-green-dark w-48 font-mono rounded-full p-4 tracking-widest"
+            class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-3"
             activeStyle={{
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `1rem`,
+              padding: `0.75rem`,
               width: `12rem`,
               borderRadius: `9999px`,
             }}
@@ -29,11 +29,11 @@ function Header() {
           </Link>
           <Link
             to="/estrutura"
-            class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-3"
             activeStyle={{
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `1rem`,
+              padding: `0.75rem`,
               width: `12rem`,
               borderRadius: `9999px`,
             }}
@@ -42,11 +42,11 @@ function Header() {
           </Link>
           <Link
             to="/localizacao"
-            class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-4"
+            class="bg-green-dark w-48 font-mono tracking-widest rounded-full p-3"
             activeStyle={{
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `1rem`,
+              padding: `0.75rem`,
               width: `12rem`,
               borderRadius: `9999px`,
             }}
@@ -55,11 +55,11 @@ function Header() {
           </Link>
           <Link
             to="/contato"
-            class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-4"
+            class="bg-green-dark w-48 tracking-widest font-mono rounded-full p-3"
             activeStyle={{
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `1rem`,
+              padding: `0.75rem`,
               width: `12rem`,
               borderRadius: `9999px`,
             }}
