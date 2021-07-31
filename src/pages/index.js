@@ -359,26 +359,26 @@ const IndexPage = () => (
       >
         100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
       </h1>
-      <div class="grid grid-cols-3 ml-96 py-8 bg-green-dark w-100 h-44 rounded-xl ">
-        <div class=" ml-36">
+      <div class="grid grid-cols-3 place-items-center ml-96 py-8 bg-green-dark w-100 h-44 rounded-xl ">
+        <div class=" ">
           <StaticImage
-            src="../images/anvisa.svg"
+            src="../images/anvisa_e.png"
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
         </div>
-        <div class=" ml-36">
+        <div class=" ">
           <StaticImage
-            src="../images/logo-abnt.svg"
+            src="../images/logo-abnt_e.png"
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
         </div>
-        <div class=" ml-36">
+        <div class=" ">
           <StaticImage
-            src="../images/ans.svg"
+            src="../images/ans_e.png"
             quality={100}
             placeholder="blurred"
             layout="fixed"

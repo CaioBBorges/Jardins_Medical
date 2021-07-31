@@ -246,7 +246,8 @@ const estrutura = () => (
       >
         100% ADEQUADO AS EXIGÊNCIAS DOS ORGÃOS REGULADORES
       </h1>
-      <div class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-100 h-3/4 ml-80 p-10">
+      <div class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-100 h-3/4 ml-80 p-10 rounded-3xl">
+      { /* PRIMEIRO COMPONENTE  */ }
         <div>
           <h1 class="text-xl">Circulações Externas e Internas</h1>
           <ul>
@@ -256,7 +257,7 @@ const estrutura = () => (
             <li>Circulações verticais</li>
           </ul>
         </div>
-
+        { /* SEGUNDO COMPONENTE  */ }
         <div>
           <h1 class="text-xl">Instalações Prediais Ordinárias e Especiais.</h1>
           <ul>
@@ -265,6 +266,59 @@ const estrutura = () => (
             <li>Instalações fluído-mecânicas</li>
             <li>Instalações de climatização</li>
           </ul>
+        </div>
+        { /* TERCEIRO COMPONENTE  */ }
+        <div>
+          <h1 class="text-xl">Condições Ambientais de Conforto.</h1>
+          <ul>
+            <li>Conforto higrotérmico</li>
+            <li>Conforto acústico</li>
+            <li>Conforto luminoso a partir de fonte natural</li>
+          </ul>
+        </div>
+        { /* QUARTO COMPONENTE  */ }
+        <div>
+          <h1 class="text-xl"> Condições de Segurança Contra Incêndio.  </h1>
+          <ul>
+            <li>Critérios de projeto</li>
+            <li>Normatização referente a segurança contra incêndio</li>
+          </ul>
+        </div>
+        { /* QUINTO COMPONENTE  */ }
+        <div>
+          <h1 class="text-xl">Controle de Infecção Hospitalar</h1>
+          <ul>
+            <li>Conceituação Básica</li>
+            <li>Critérios de Projeto</li>
+
+          </ul>
+        </div>
+        { /* SEXTO COMPONENTE  */ }
+        <div class="grid grid-cols-3 place-items-center">
+          <div class="">
+            <StaticImage
+              src="../images/anvisa_e.png"
+              quality={100}
+              placeholder="blurred"
+              layout="fixed"
+            />
+          </div>
+          <div class=" ">
+            <StaticImage
+              src="../images/logo-abnt_e.png"
+              quality={100}
+              placeholder="blurred"
+              layout="fixed"
+            />
+          </div>
+          <div class=" ">
+            <StaticImage
+              src="../images/ans_e.png"
+              quality={100}
+              placeholder="blurred"
+              layout="fixed"
+            />
+          </div>
         </div>
 
       </div>
