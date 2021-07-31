@@ -222,8 +222,10 @@ const IndexPage = () => (
       }}
     >
       <h1
-        class="text-white font-mono text-9xl text-center font-thin	pt-80 w-full"
+        class="text-white font-mono font-thin pt-80 w-full text-8xl"
         style={{
+          fontSize: `48px`,
+          lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
           color: `#`,
@@ -232,8 +234,13 @@ const IndexPage = () => (
       >
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
-      <div class=" ml-64">
-        <button class="bg-green-dark ml-96 rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
+      <div
+        class="flex
+      justify-center
+      "
+        style={{ align: `center` }}
+      >
+        <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
           SAIBA MAIS
         </button>
       </div>
@@ -340,9 +347,7 @@ const IndexPage = () => (
         APRIMORAMENTO
       </p>
     </section>
-    <section
-      class="bg-cover bg-center bg-no-repeat w-full h-screen align-center justify-center bg-clip-border"
-    >
+    <section class="bg-cover bg-center bg-no-repeat w-full h-screen align-center justify-center bg-clip-border">
       <h1
         class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10  w-full"
         style={{
