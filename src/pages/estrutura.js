@@ -7,6 +7,8 @@ import inovador from "../images/inovador.svg"
 import bg4 from "../images/bg4.png"
 import Header from "../components/header"
 import bg3 from "../images/bg3.png"
+import auditorio from "../images/auditorio.png"
+import footer from "../images/footer.png"
 
 const estrutura = () => (
   <div class="">
@@ -225,6 +227,105 @@ const estrutura = () => (
         </button>
       </div>
     </section>
+    <section
+      class="bg-cover bg-center bg-no-repeat h-screen justify-center bg-clip-border"
+      style={{
+        backgroundImage: `url(${auditorio})`,
+      }}
+    >
+      <h1
+        class="text-white px-12 font-mono font-thin pt-24  w-full"
+        style={{
+          fontSize: `36px`,
+          lineHeight: `171.2%`,
+          textAlign: `center`,
+          letterSpacing: `0.54em`,
+          color: `#FFFFFF`,
+          textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+        }}
+      >
+        100% ADEQUADO AS EXIGÊNCIAS DOS ORGÃOS REGULADORES
+      </h1>
+      <div class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-100 h-3/4 ml-80 p-10">
+        <div>
+          <h1 class="text-xl">Circulações Externas e Internas</h1>
+          <ul>
+            <li>Acessos</li>
+            <li>Estacionamentos</li>
+            <li>Circulações horizontais</li>
+            <li>Circulações verticais</li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="text-xl">Instalações Prediais Ordinárias e Especiais.</h1>
+          <ul>
+            <li>Instalações hidro-sanitárias</li>
+            <li>instalações elétricas e eletrônicas</li>
+            <li>Instalações fluído-mecânicas</li>
+            <li>Instalações de climatização</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <footer
+      class="bg-cover py-5 grid grid-cols-5 h-28 justify-between place-items-center"
+      style={{
+        backgroundImage: `url(${footer})`,
+      }}
+    >
+      <a href="#">
+        <div class="">
+          <StaticImage
+            src="../images/face.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/tt.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/insta.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/linkedin.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+      <a href="#">
+        <div>
+          <StaticImage
+            src="../images/youtube.svg"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+      </a>
+    </footer>  
   </div>
 )
 

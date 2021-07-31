@@ -382,7 +382,7 @@ const IndexPage = () => (
       </div>
     </section>
     <footer
-      class="bg-cover py-5 grid grid-cols-5 h-28 bg-center bg-no-repeat  justify-beetwen bg-clip-border"
+      class="bg-cover py-5 grid grid-cols-5 h-28 justify-between place-items-center"
       style={{
         backgroundImage: `url(${footer})`,
       }}
