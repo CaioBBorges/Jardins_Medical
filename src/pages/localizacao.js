@@ -16,7 +16,7 @@ const localizacao = () => (
       }}
     >
       <Header />
-      <div class="grid grid-cols-2 justify-between place-items-center w-full px-20 ">
+      <div class="grid grid-cols-2 justify-between place-items-center w-full px-20 pb-48">
         <div class="">
           <h1
             class=" text-white font-mono text-center pt-20"
@@ -58,7 +58,7 @@ const localizacao = () => (
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0987628392472!2d-34.828922734623106!3d-7.114552621742576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd24fbb2d369%3A0x345c17bba26bf55b!2zVGFtYmHDuiwgSm_Do28gUGVzc29hIC0gUEI!5e0!3m2!1spt-BR!2sbr!4v1627688293962!5m2!1spt-BR!2sbr"
-              style={{ height: `25rem`, margin: `2.5rem` }}
+              style={{ width: `50rem`, height: `31rem`, margin: `2.5rem` }}
               allowfullscreen=""
               loading="lazy"
             ></iframe>
