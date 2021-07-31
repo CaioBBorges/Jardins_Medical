@@ -235,9 +235,7 @@ const IndexPage = () => (
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
       <div
-        class="flex
-      justify-center
-      "
+        class="flex justify-center"
         style={{ align: `center` }}
       >
         <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
