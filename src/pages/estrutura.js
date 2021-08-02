@@ -10,9 +10,9 @@ import auditorio from "../images/auditorio.png"
 import footer from "../images/footer.png"
 
 const estrutura = () => (
-  <div class="">
+  <div>
     <section
-      class="bg-cover bg-local bg-no-repeat	bg-clip-border h-screen"
+      class="bg-cover bg-local bg-no-repeat	bg-clip-border"
       style={{
         backgroundImage: `url(${inovador})`,
         resize: `both`,
@@ -278,6 +278,7 @@ const estrutura = () => (
       </h1>
       <div
         style={{
+          marginBottom: `2vw`,
           fontSize: `1vw`,
           padding: `4vw`,
         }}
@@ -285,7 +286,7 @@ const estrutura = () => (
       >
         {/* PRIMEIRO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Circulações Externas e Internas</h1>
+          <h1 class="text-xl lg:text-4xl">Circulações Externas e Internas</h1>
           <ul>
             <li>Acessos</li>
             <li>Estacionamentos</li>
@@ -295,7 +296,7 @@ const estrutura = () => (
         </div>
         {/* SEGUNDO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Instalações Prediais Ordinárias e Especiais.</h1>
+          <h1 class="text-xl lg:text-4xl">Instalações Prediais Ordinárias e Especiais.</h1>
           <ul>
             <li>Instalações hidro-sanitárias</li>
             <li>instalações elétricas e eletrônicas</li>
@@ -305,7 +306,7 @@ const estrutura = () => (
         </div>
         {/* TERCEIRO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Condições Ambientais de Conforto.</h1>
+          <h1 class="text-xl lg:text-4xl">Condições Ambientais de Conforto.</h1>
           <ul>
             <li>Conforto higrotérmico</li>
             <li>Conforto acústico</li>
@@ -314,7 +315,7 @@ const estrutura = () => (
         </div>
         {/* QUARTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl"> Condições de Segurança Contra Incêndio. </h1>
+          <h1 class="text-xl lg:text-4xl"> Condições de Segurança Contra Incêndio. </h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
@@ -322,7 +323,7 @@ const estrutura = () => (
         </div>
         {/* QUINTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Controle de Infecção Hospitalar</h1>
+          <h1 class="text-xl lg:text-4xl">Controle de Infecção Hospitalar</h1>
           <ul>
             <li>Conceituação Básica</li>
             <li>Critérios de Projeto</li>
