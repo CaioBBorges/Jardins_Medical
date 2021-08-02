@@ -5,7 +5,7 @@ import Header from "../components/header"
 const contato = () => (
   <div class="">
     <section
-      class=" bg-local bg-no-repeat bg-top bg-cover bg-clip-border w-screen h-screen  place-content-center"
+      class=" bg-local bg-no-repeat bg-top bg-cover bg-clip-border place-content-center"
       style={{
         backgroundImage: `url(${bg3})`,
         resize: `both`,
@@ -14,122 +14,164 @@ const contato = () => (
     >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <Header/>
+      <Header />
       <div class="grid grid-cols-2">
         <div>
           <div class=" py-20">
-              <h1 class="text-center"
-                style={{
-                  fontSize: `4vw`,
-                  lineHeight: `171.2%`,
-                  letterSpacing: `0.63em`,
-                  color: `#FFFFFF`,
-                }}   
-              >
+            <h1
+              class="text-center"
+              style={{
+                fontSize: `4vw`,
+                lineHeight: `171.2%`,
+                letterSpacing: `0.63em`,
+                color: `#FFFFFF`,
+                textAlign: `center`,
+                letterSpacing: `0.63em`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              }}
+            >
               FALE <br /> CONOSCO
-              </h1>
-            </div>
-            <div class="text-center">
-              <button class="bg-green-dark font-mono rounded-full p-3 tracking-widest  text-white text-center"
-                  style={{
-                    width: `30vw`,
-                    height:` 6vh`,
-                  }}        
-              >
-                Chat
-              </button>
-            </div>
+            </h1>
+          </div>
+          <div class="text-center">
+            <button
+              class="bg-green-dark font-mono rounded-full p-3 tracking-widest  text-white text-center"
+              style={{
+                width: `30vw`,
+                height: `6vh`,
+              }}
+            >
+              Chat
+            </button>
+          </div>
         </div>
-      </div>
+        <form
+          style={{ paddingRight: `2vw`, paddingLeft: `2vw`,display:`flex`,flexDirection:`column` }}
+          action="acao mandar mensagem"
+          method="post"
+        >
+          <div class="flex flex-col">
+            <label
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                fontSize: `36px`,
+                lineHeight: `171.2%`,
+                textAlign: `center`,
+                letterSpacing: `0.63em`,
+                color: `#FFFFFF`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              }}
+              for="name"
+            >
+              Nome
+            </label>
+            <input
+              style={{                textAlign: `center`,
 
-
-
-
-
-      
-      <form action="acao mandar mensagem" method="post">
-        <div>
-          <label
-            style={{
-              fontSize: `36px`,
-              lineHeight: `171.2%`,
-              textAlign: `center`,
-              letterSpacing: `0.63em`,
-              color: `#FFFFFF`,
-              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-            }}
-            for="name"
-          >
-            Nome
-          </label>
-          <input type="text" id="name" />
-        </div>
-        <div>
-          <label
-            style={{
-              fontSize: `36px`,
-              lineHeight: `171.2%`,
-              textAlign: `center`,
-              letterSpacing: `0.63em`,
-              color: `#FFFFFF`,
-              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-            }}
-            for="phone"
-          >
-            Telefone
-          </label>
-          <input type="phone" id="phone" />
-        </div>
-        <div>
-          <label
-            style={{
-              fontSize: `36px`,
-              lineHeight: `171.2%`,
-              textAlign: `center`,
-              letterSpacing: `0.63em`,
-              color: `#FFFFFF`,
-              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-            }}
-            for="mail"
-          >
-            E-mail
-          </label>
-          <input type="email" id="mail" />
-        </div>
-        <div>
-          <label
-            style={{
-              fontSize: `36px`,
-              lineHeight: `171.2%`,
-              textAlign: `center`,
-              letterSpacing: `0.63em`,
-              color: `#FFFFFF`,
-              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-            }}
-            for="msg"
-          >
-            Mensagem
-          </label>
-          <textarea id="msg"></textarea>
-        </div>
-        <div class="button">
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                textAlign: `center`,
+              }}
+              type="text"
+              id="name"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                fontSize: `36px`,
+                lineHeight: `171.2%`,
+                textAlign: `center`,
+                letterSpacing: `0.63em`,
+                color: `#FFFFFF`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              }}
+              for="phone"
+            >
+              Telefone
+            </label>
+            <input
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                textAlign: `center`,
+              }}
+              type="phone"
+              id="phone"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                fontSize: `36px`,
+                lineHeight: `171.2%`,
+                textAlign: `center`,
+                letterSpacing: `0.63em`,
+                color: `#FFFFFF`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              }}
+              for="mail"
+            >
+              E-mail
+            </label>
+            <input
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                textAlign: `center`,
+              }}
+              type="email"
+              id="mail"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              style={{
+                paddingTop: `3vw`,
+                borderRadius: `9999px`,
+                fontSize: `36px`,
+                lineHeight: `171.2%`,
+                textAlign: `center`,
+                letterSpacing: `0.63em`,
+                color: `#FFFFFF`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              }}
+              for="msg"
+            >
+              Mensagem
+            </label>
+            <textarea
+              style={{
+                paddingTop: `3vw`,
+                paddingBottom: `3vw`,
+                borderRadius: `2rem`,
+                textAlign: `center`,
+                height: `20vh`,
+              }}
+              id="msg"
+            ></textarea>
+          </div>
           <button
+            class="bg-green-dark font-mono rounded-full p-3 tracking-widest text-white text-center"
             style={{
-              fontSize: `1.25vw`,
-              lineHeight: `1.75vw`,
-              width: `20vw`,
-              letterSpacing: `0.1vw`,
-              color: `#ffffff`,
-              backgroundColor: `#033415`,
-              padding: `0.75rem`,
-              borderRadius: `9999px`,
+              width: `30vw`,
+              height: `6vh`,
+              marginTop:`3vw`,
+              marginBottom:`10vw`,
+              alignSelf: `center`
+
             }}
             type="submit"
           >
             Enviar sua mensagem
           </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
   </div>
 )

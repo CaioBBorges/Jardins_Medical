@@ -381,7 +381,7 @@ const IndexPage = () => (
         AUDITÓRIO <br /> PRINCIPAL
       </h1>
       <p
-        class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest "
+        class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed h-screen tracking-widest "
         style={{
           fontSize: `14px`,
           lineHeight: `171.2%`,

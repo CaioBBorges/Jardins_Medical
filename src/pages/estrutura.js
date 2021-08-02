@@ -22,12 +22,15 @@ const estrutura = () => (
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
       <Header />
-      <div class="pb-98">
+      <div>
         <h1
-          class="text-center w-full p-56"
           style={{
-            fontSize: `36px`,
-            lineHeight: `171.2%`,
+            fontSize: `3vw`,
+            paddingTop: `10vh`,
+            paddingRight: `10vw`,
+            paddingLeft: `10vw`,
+            paddingBottom: `10vw`,
+            lineHeight: `4vw`,
             textAlign: `center`,
             letterSpacing: `0.63em`,
             color: `#FFFFFF`,
@@ -45,42 +48,35 @@ const estrutura = () => (
       style={{
         backgroundImage: `url(${bge2})`,
         resize: `both`,
-        overflow: `hidden`,
-        placeContent: `center`,
+        display: `flex`,
         backgroundAttachment: `local`,
         height: `90vh`,
       }}
     >
-      <div
+      <p
         style={{
-          placeContent: `center`,
-          paddingTop: `30vw`,
-          paddingBottom: `30vw`,
-          width: `60vw`,
-          height: `40vw`,
+          marginTop: `5vh`,
+          padding: `5vh`,
+          marginBotom: `55vh`,
+          marginLeft: `5vh`,
+          marginRight: `5vh`,
+          width: `80vw`,
           background: ` rgba(200, 200, 200, 0.05)`,
           backdropFilter: `blur(3px)`,
-          borderRadius: `59px`,
-          alignItems: `center`,
+          borderRadius: `2rem`,
+          fontSize: `2vw`,
+          lineHeight: `2vw`,
+          textAlign: `center`,
+          letterSpacing: `1vw`,
+          color: `#FFFFFF`,
+          textShadow: `0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 7px rgba(0, 0, 0, 0.8), 4px 9px 34px rgba(0, 0, 0, 0.8)`,
         }}
       >
-        <p
-          style={{
-            padding: `10vw`,
-            fontSize: `3vw`,
-            lineHeight: `3vw`,
-            textAlign: `center`,
-            letterSpacing: `1vw`,
-            color: `#FFFFFF`,
-            textShadow: `0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 7px rgba(0, 0, 0, 0.8), 4px 9px 34px rgba(0, 0, 0, 0.8)`,
-          }}
-        >
-          EM SEUS QUASE 5700,00m² DE ÁREA O JARDINS MEDICAL OFERECE UMA
-          ESTRUTURA COMPLETA PARA SUA ROTINA COM TODOS OS ASPECTOS FACILITIES ,
-          VOCÊ TEM TUDO O QUE PRECISA PARA COMPOR UMA SEDE MÉDICA CLASSE (AA) EM
-          SERVIÇO E ATENDIMENTO.
-        </p>
-      </div>
+        EM SEUS QUASE 5700,00m² DE ÁREA O JARDINS MEDICAL OFERECE UMA ESTRUTURA
+        COMPLETA PARA SUA ROTINA COM TODOS OS ASPECTOS FACILITIES , VOCÊ TEM
+        TUDO O QUE PRECISA PARA COMPOR UMA SEDE MÉDICA CLASSE (AA) EM SERVIÇO E
+        ATENDIMENTO.
+      </p>
     </section>
     <section
       class="bg-cover bg-center bg-local bg-no-repeat"
@@ -266,7 +262,7 @@ const estrutura = () => (
       <h1
         class="font-mono font-thin"
         style={{
-          paddingTop:`10vw`,
+          paddingTop: `10vw`,
           paddingRight: `1vw`,
           paddingLeft: `1vw`,
           lineHeight: `171.2%`,
