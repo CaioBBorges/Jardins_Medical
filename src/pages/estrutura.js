@@ -24,9 +24,10 @@ const estrutura = () => (
       <Header />
       <div class="pb-98">
         <h1
-          class="text-center w-full p-56"
+          class="w-full"
           style={{
-            fontSize: `36px`,
+            paddingTop: `5vh`,
+            fontSize: `3vh`,
             lineHeight: `171.2%`,
             textAlign: `center`,
             letterSpacing: `0.63em`,
@@ -53,20 +54,16 @@ const estrutura = () => (
     >
       <div
         style={{
-          placeContent: `center`,
-          paddingTop: `30vw`,
-          paddingBottom: `30vw`,
-          width: `60vw`,
-          height: `40vw`,
+          paddingTop: `5vw`,
+          textAlign: `center`,
           background: ` rgba(200, 200, 200, 0.05)`,
           backdropFilter: `blur(3px)`,
           borderRadius: `59px`,
-          alignItems: `center`,
+          textAlign: `center`,
         }}
       >
         <p
           style={{
-            padding: `10vw`,
             fontSize: `3vw`,
             lineHeight: `3vw`,
             textAlign: `center`,
@@ -282,6 +279,7 @@ const estrutura = () => (
       </h1>
       <div
         style={{
+          marginBottom: `2vw`,
           fontSize: `1vw`,
           padding: `4vw`,
         }}
@@ -289,7 +287,7 @@ const estrutura = () => (
       >
         {/* PRIMEIRO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Circulações Externas e Internas</h1>
+          <h1 class="text-xl lg:text-4xl">Circulações Externas e Internas</h1>
           <ul>
             <li>Acessos</li>
             <li>Estacionamentos</li>
@@ -299,7 +297,7 @@ const estrutura = () => (
         </div>
         {/* SEGUNDO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Instalações Prediais Ordinárias e Especiais.</h1>
+          <h1 class="text-xl lg:text-4xl">Instalações Prediais Ordinárias e Especiais.</h1>
           <ul>
             <li>Instalações hidro-sanitárias</li>
             <li>instalações elétricas e eletrônicas</li>
@@ -309,7 +307,7 @@ const estrutura = () => (
         </div>
         {/* TERCEIRO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Condições Ambientais de Conforto.</h1>
+          <h1 class="text-xl lg:text-4xl">Condições Ambientais de Conforto.</h1>
           <ul>
             <li>Conforto higrotérmico</li>
             <li>Conforto acústico</li>
@@ -318,7 +316,7 @@ const estrutura = () => (
         </div>
         {/* QUARTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl"> Condições de Segurança Contra Incêndio. </h1>
+          <h1 class="text-xl lg:text-4xl"> Condições de Segurança Contra Incêndio. </h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
@@ -326,7 +324,7 @@ const estrutura = () => (
         </div>
         {/* QUINTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl">Controle de Infecção Hospitalar</h1>
+          <h1 class="text-xl lg:text-4xl">Controle de Infecção Hospitalar</h1>
           <ul>
             <li>Conceituação Básica</li>
             <li>Critérios de Projeto</li>
