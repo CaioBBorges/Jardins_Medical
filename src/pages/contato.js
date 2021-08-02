@@ -1,10 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import bg3 from "../images/bg3.png"
-import ola1 from "../images/ola1.svg"
-import inovador from "../images/inovador.svg"
-import bg4 from "../images/bg4.png"
 import Header from "../components/header"
 
 const contato = () => (

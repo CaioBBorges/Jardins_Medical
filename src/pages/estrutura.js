@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import bge2 from "../images/bge2.png"
-import ola1 from "../images/ola1.svg"
 import inovador from "../images/inovador.svg"
 import bg4 from "../images/bg4.png"
 import Header from "../components/header"
@@ -42,31 +41,36 @@ const estrutura = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-local bg-no-repeat	bg-clip-border h-screen place-content-center"
+      class="bg-cover bg-no-repeat bg-clip-border"
       style={{
         backgroundImage: `url(${bge2})`,
         resize: `both`,
         overflow: `hidden`,
+        placeContent: `center`,
+        backgroundAttachment: `local`,
+        height: `90vh`,
       }}
     >
       <div
         style={{
-          margin: `20rem`,
-          width: `1244px`,
-          height: `243px`,
-          left: `123px`,
+          placeContent: `center`,
+          paddingTop: `30vw`,
+          paddingBottom: `30vw`,
+          width: `60vw`,
+          height: `40vw`,
           background: ` rgba(200, 200, 200, 0.05)`,
           backdropFilter: `blur(3px)`,
           borderRadius: `59px`,
+          alignItems: `center`,
         }}
       >
         <p
-          class="text-center p-12"
           style={{
-            fontSize: `18px`,
-            lineHeight: `171.2%`,
+            padding: `10vw`,
+            fontSize: `3vw`,
+            lineHeight: `3vw`,
             textAlign: `center`,
-            letterSpacing: `0.63em`,
+            letterSpacing: `1vw`,
             color: `#FFFFFF`,
             textShadow: `0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 7px rgba(0, 0, 0, 0.8), 4px 9px 34px rgba(0, 0, 0, 0.8)`,
           }}
@@ -79,34 +83,49 @@ const estrutura = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-local bg-no-repeat h-screen"
+      class="bg-cover bg-center bg-local bg-no-repeat"
       style={{
         backgroundImage: `url(${bg3})`,
+        placeContent: `center`,
       }}
     >
-      <div class="grid grid-cols-4 justify-between px-16 place-items-center pt-20">
+      <div
+        style={{
+          paddingTop: `20vh`,
+          paddingBottom: `20vh`,
+          paddingRight: `8vw`,
+          paddingLeft: `8vw`,
+        }}
+        class="grid grid-cols-4 place-items-center place-content-start"
+      >
         {/* PRIMEIRO COMPONENTE  */}
-        <div>
+        <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/lobby_e.svg"
+            style={{ width: `18vw`, height: `18vh` }}
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
           <div
             style={{
-              width: `307px`,
-              height: `250px`,
-              left: `61px`,
-              top: `3349px`,
+              width: `18vw`,
+
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
           >
-            <h1 class="pt-5 text-center text-lg font-bold text-white font-mono">
+            <h1
+              style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
+              class="font-bold text-white font-mono"
+            >
               LOBBY
             </h1>
-            <p class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono ">
+            <p
+              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
+              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
+            >
+              {" "}
               LOBBY PERFEITO PARA RECEBER TODO O CORPO MÉDICO E OS PACIENTES,
               IDEAL PARA INFORMAR, GUIAR E ORIENTAR AS PESSOAS PROCURANDO POR
               CONSULTÓRIOS.
@@ -115,81 +134,96 @@ const estrutura = () => (
         </div>
 
         {/* SEGUNDA COMPONENTE  */}
-        <div>
+        <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/salas_cirurgia.svg"
+            style={{ width: `18vw`, height: `18vh` }}
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
           <div
             style={{
-              width: `307px`,
-              height: `250px`,
-              left: `61px`,
-              top: `3349px`,
+              width: `18vw`,
+
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
           >
-            <h1 class=" px-5 pt-5 text-lg text-center font-bold text-white font-mono">
+            <h1
+              style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
+              class="font-bold text-white font-mono"
+            >
+              {" "}
               SALAS PARA CENTROS <br /> CIRUGICOS{" "}
             </h1>
-            <p class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono ">
+            <p
+              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
+              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
+            >
               O JARDINS MEDICAL, OFERECE UMA ESTRUTURA IDEAL PARA CENTROS
               CENTROS CIRURGICOS E SALA DE OPERAÇÕES.
             </p>
           </div>
         </div>
         {/* TERCEIRO COMPONENTE  */}
-        <div>
+        <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/rooftop_e.svg"
+            style={{ width: `18vw`, height: `18vh` }}
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
           <div
             style={{
-              width: `307px`,
-              height: `250px`,
-              left: `61px`,
-              top: `3349px`,
+              width: `18vw`,
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
           >
-            <h1 class=" pt-5 text-center text-lg font-bold text-white font-mono">
+            <h1
+              style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
+              class="font-bold text-white font-mono"
+            >
               ROOFTOP
             </h1>
-            <p class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono ">
+            <p
+              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
+              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
+            >
               UM AMBIENTE CONFORTÁVEL E ACONCHEGANTE, IDEAL PARA OFERECER
               MOMENTOS DE TRANQUILIDADE A TODOS OS PACIENTES E TERCEIROS.
             </p>
           </div>
         </div>
         {/* QUARTO COMPONENTE  */}
-        <div>
+        <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
-            src="../images/auditorio_e.svg"
+            src="../images/auditorio.png"
+            style={{ width: `18vw`, height: `18vh` }}
             quality={100}
             placeholder="blurred"
             layout="fixed"
           />
           <div
             style={{
-              width: `307px`,
-              height: `250px`,
-              left: `61px`,
-              top: `3349px`,
+              width: `18vw`,
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
           >
-            <h1 class=" pt-5 text-center text-lg font-bold text-white font-mono">
+            <h1
+              style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
+              class="font-bold text-white font-mono"
+            >
               AUDITÓRIO
             </h1>
-            <p class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono ">
+            <p
+              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
+              class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
+            >
+              {" "}
               UM LOCAL PARA INCENTIVAR PALESTRAS E REUNIÕES DE PESQUISA E
               ATUAÇÕES DOS PROFISSIONAIS DA ÁREA DA SAÚDE.
             </p>
@@ -204,50 +238,56 @@ const estrutura = () => (
       }}
     >
       <h1
-        class="text-white font-mono font-thin pt-80 w-full text-8xl"
+        class="font-mono font-thin pt-80"
         style={{
-          fontSize: `48px`,
+          width: `100%`,
+          fontSize: `7vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
-          color: `#`,
+          color: `#FFFFFF`,
           textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
         }}
       >
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
-      <div
-        class="flex
-      justify-center
-      "
-        style={{ align: `center` }}
-      >
+      <div class="flex justify-center" style={{ align: `center` }}>
         <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
           SAIBA MAIS
         </button>
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat h-screen justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat h-screen justify-center bg-clip-border flex flex-col items-center	"
       style={{
         backgroundImage: `url(${auditorio})`,
       }}
     >
       <h1
-        class="text-white px-12 font-mono font-thin pt-24  w-full"
+        class="font-mono font-thin"
         style={{
-          fontSize: `36px`,
+          paddingTop:`10vw`,
+          paddingRight: `1vw`,
+          paddingLeft: `1vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.54em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+          width: `100%`,
+          fontSize: `3vw`,
         }}
       >
         100% ADEQUADO AS EXIGÊNCIAS DOS ORGÃOS REGULADORES
       </h1>
-      <div class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-100 h-3/4 ml-80 p-10 rounded-3xl">
-      { /* PRIMEIRO COMPONENTE  */ }
+      <div
+        style={{
+          fontSize: `1vw`,
+          padding: `4vw`,
+        }}
+        class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-5/6 rounded-3xl"
+      >
+        {/* PRIMEIRO COMPONENTE  */}
         <div>
           <h1 class="text-xl">Circulações Externas e Internas</h1>
           <ul>
@@ -257,7 +297,7 @@ const estrutura = () => (
             <li>Circulações verticais</li>
           </ul>
         </div>
-        { /* SEGUNDO COMPONENTE  */ }
+        {/* SEGUNDO COMPONENTE  */}
         <div>
           <h1 class="text-xl">Instalações Prediais Ordinárias e Especiais.</h1>
           <ul>
@@ -267,7 +307,7 @@ const estrutura = () => (
             <li>Instalações de climatização</li>
           </ul>
         </div>
-        { /* TERCEIRO COMPONENTE  */ }
+        {/* TERCEIRO COMPONENTE  */}
         <div>
           <h1 class="text-xl">Condições Ambientais de Conforto.</h1>
           <ul>
@@ -276,28 +316,28 @@ const estrutura = () => (
             <li>Conforto luminoso a partir de fonte natural</li>
           </ul>
         </div>
-        { /* QUARTO COMPONENTE  */ }
+        {/* QUARTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl"> Condições de Segurança Contra Incêndio.  </h1>
+          <h1 class="text-xl"> Condições de Segurança Contra Incêndio. </h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
           </ul>
         </div>
-        { /* QUINTO COMPONENTE  */ }
+        {/* QUINTO COMPONENTE  */}
         <div>
           <h1 class="text-xl">Controle de Infecção Hospitalar</h1>
           <ul>
             <li>Conceituação Básica</li>
             <li>Critérios de Projeto</li>
-
           </ul>
         </div>
-        { /* SEXTO COMPONENTE  */ }
+        {/* SEXTO COMPONENTE  */}
         <div class="grid grid-cols-3 place-items-center">
           <div class="">
             <StaticImage
               src="../images/anvisa_e.png"
+              style={{ width: `4vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"
@@ -306,6 +346,7 @@ const estrutura = () => (
           <div class=" ">
             <StaticImage
               src="../images/logo-abnt_e.png"
+              style={{ width: `10vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"
@@ -314,13 +355,13 @@ const estrutura = () => (
           <div class=" ">
             <StaticImage
               src="../images/ans_e.png"
+              style={{ width: `12vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"
             />
           </div>
         </div>
-
       </div>
     </section>
     <footer
@@ -379,7 +420,7 @@ const estrutura = () => (
           />
         </div>
       </a>
-    </footer>  
+    </footer>
   </div>
 )
 
