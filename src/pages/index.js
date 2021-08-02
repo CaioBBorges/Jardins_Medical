@@ -130,9 +130,9 @@ const IndexPage = () => (
           <p
             class="font-mono text-center"
             style={{
-              fontSize: `1.5vw`,
-              lineHeight: `2vw`,
-              textAlign: `justify`,
+              fontSize: `1.6vw`,
+              lineHeight: `3.5vh`,
+              textAlign: `center`,
               letterSpacing: `0.48em`,
               color: `#2E2E2E`,
               paddingTop: `5vh`,
