@@ -26,7 +26,7 @@ const IndexPage = () => (
               style={{
                 lineHeight: `15vh`,
                 textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-                fontSize: `6vw`,
+                fontSize: `5vw`,
               }}
             >
               INOVADOR,
@@ -50,14 +50,15 @@ const IndexPage = () => (
           divide-green-500 divide-opacity-25 divide-2 rounded-xl font-mono justify-evenly"
             style={{
               zIndex: `1`,
-              marginBottom: `-6vh`,
+              marginBottom: `6vw`,
+              paddingTop: `6vh`,
               display: `flex`,
               justifyContent: `center`,
               alignItems: `center`,
               textAlign: `center`,
               letterSpacing: `1vw`,
               fontSize: `1vw`,
-              height: `12vh`,
+              height: `125px`,
               width: `100%`,
             }}
           >
@@ -111,9 +112,9 @@ const IndexPage = () => (
           <h2
             class="leading-relaxed tracking-widest font-mono text-black text-right"
             style={{
-              fontSize: `4vw`,
+              fontSize: `3vw`,
               lineHeight: `171.2%`,
-              textAlign: `right`,
+              textAlign: `center`,
               letterSpacing: `0.63em`,
               color: `#2E2E2E`,
               wordBreak: `break-word`,
@@ -124,12 +125,11 @@ const IndexPage = () => (
           <p
             class="font-mono text-center"
             style={{
-              fontSize: `1.5vw`,
-              lineHeight: `2vw`,
-              textAlign: `justify`,
+              fontSize: `1.6vw`,
+              lineHeight: `3.5vh`,
+              textAlign: `center`,
               letterSpacing: `0.48em`,
               color: `#2E2E2E`,
-              paddingTop: `10vh`,
             }}
           >
             O Jardins Medical traz um novo conceito de excelência, com espaços
