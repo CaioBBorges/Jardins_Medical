@@ -21,13 +21,12 @@ const IndexPage = () => (
       <div class="">
         <Header />
         <div style={{ paddingTop: `10vh`, width: `60vw` }}>
-          <div class="px-20 font-mono text-left text-white ">
+          <div class="px-20 font-mono text-justify text-white ">
             <h1
               style={{
                 lineHeight: `15vh`,
                 textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
                 fontSize: `6vw`,
-                fontFamily: `mono`
               }}
             >
               INOVADOR,
@@ -39,19 +38,18 @@ const IndexPage = () => (
         </div>
         <div
           style={{
-            paddingTop:`10vw`,
             paddingLeft: `4vw`,
             paddingRight: `4vw`,
             justifyItems: "center",
             alignItems: "center",
-            justifyContent: `center`,
           }}
+          class="px-20 -bottom-14"
         >
           <div
-            class="grid grid-cols-4 leading-loose text-white bg-green-dark divide-x
+            class="px-5 grid grid-cols-4 leading-loose text-white bg-green-dark divide-x
           divide-green-500 divide-opacity-25 divide-2 rounded-xl font-mono justify-evenly"
             style={{
-              position: `absolute`,
+              zIndex: `1`,
               marginBottom: `-6vh`,
               display: `flex`,
               justifyContent: `center`,
@@ -60,11 +58,11 @@ const IndexPage = () => (
               letterSpacing: `1vw`,
               fontSize: `1vw`,
               height: `12vh`,
-              }}
+              width: `100%`,
+            }}
           >
             <p
               style={{
-                zIndex: `1`,
                 height: `12vh`,
                 width: `100%`,
               }}
@@ -73,7 +71,6 @@ const IndexPage = () => (
             </p>
             <p
               style={{
-                zIndex: `1`,
                 height: `12vh`,
                 width: `100%`,
               }}
@@ -82,7 +79,6 @@ const IndexPage = () => (
             </p>
             <p
               style={{
-                zIndex: `1`,
                 height: `12vh`,
                 width: `100%`,
               }}
@@ -91,7 +87,6 @@ const IndexPage = () => (
             </p>
             <p
               style={{
-                zIndex: `1`,
                 height: `12vh`,
                 width: `100%`,
               }}
@@ -102,8 +97,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section
-      style={{ zindex: `0` }}
+    <section style={{ zindex: `0` }}
       class="w-full h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 content-center flex"
     >
       <div

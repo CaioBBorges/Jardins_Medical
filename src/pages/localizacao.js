@@ -19,7 +19,6 @@ const localizacao = () => (
           <h1
             class=" text-white font-mono text-center pt-20"
             style={{
-              paddingTop:`20vh`,
               fontSize: `40px`,
               lineHeight: `171.2%`,
               letterSpacing: `0.63em`,
