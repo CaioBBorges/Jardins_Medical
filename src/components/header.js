@@ -6,32 +6,33 @@ function Header() {
   return (
     <div class="flex flex-row justify-between w-full">
       <StaticImage
-        class="w-56"
         src="../images/logo.svg"
-        style={{ width: `16vw` }}
+        style={{ width: `14vw`, height: `16vw` }}
         quality={95}
         formats={["AUTO", "WEBP", "AVIF"]}
       />
-      <div class="pt-12 pr-12">
-        <ul class="flex flex-row text-xl text-center text-white w-full space-x-10 sm:space-x-8 xs:space-x-6 place-items-center">
+      <div style={{ paddingTop: `5vw`, paddingRight: `3vw` }}>
+        <ul class="flex flex-row text-xl text-center text-white w-full place-items-center">
           <Link
             to="/"
             class="bg-green-dark font-mono rounded-full p-3"
             style={{
+              marginRight: `3vw`,
+              textAlign: "center",
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
             }}
             activeStyle={{
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
               padding: `0.75rem`,
-              width: `10vw`,
+              width: `11vw`,
               borderRadius: `9999px`,
             }}
           >
@@ -41,20 +42,23 @@ function Header() {
             to="/estrutura"
             class="bg-green-dark font-mono rounded-full p-3"
             style={{
+              marginRight: `3vw`,
+              textAlign: "center",
+
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
             }}
             activeStyle={{
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
               padding: `0.75rem`,
-              width: `10vw`,
+              width: `11vw`,
               borderRadius: `9999px`,
             }}
           >
@@ -64,20 +68,23 @@ function Header() {
             to="/localizacao"
             class="bg-green-dark font-mono rounded-full p-3"
             style={{
+              marginRight: `3vw`,
+              textAlign: "center",
+
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
             }}
             activeStyle={{
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
               padding: `0.75rem`,
-              width: `10vw`,
+              width: `11vw`,
               borderRadius: `9999px`,
             }}
           >
@@ -87,20 +94,22 @@ function Header() {
             to="/contato"
             class="bg-green-dark font-mono rounded-full p-3"
             style={{
+              marginRight: `3vw`,
+              textAlign: "center",
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
             }}
             activeStyle={{
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
-              width: `10vw`,
+              width: `11vw`,
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
               padding: `0.75rem`,
-              width: `10vw`,
+              width: `11vw`,
               borderRadius: `9999px`,
             }}
           >

@@ -9,8 +9,6 @@ import Header from "../components/header"
 import auditorio from "../images/auditorio.png"
 import lobby from "../images/lobby.png"
 import rooftop from "../images/rooftop.png"
-import branco from "../images/branco.png"
-import footer from "../images/footer.png"
 
 const IndexPage = () => (
   <div class="">
@@ -20,72 +18,93 @@ const IndexPage = () => (
     >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <div class="h-screen">
+      <div class="">
         <Header />
-        <div style={{ paddingTop: `12rem`, width: `66.66666%` }}>
-          <div class="px-20 leading-relaxed font-mono text-justify text-white ">
+        <div style={{ paddingTop: `10vh`, width: `60vw` }}>
+          <div class="px-20 font-mono text-justify text-white ">
             <h1
               style={{
-                textSize: `6vw`,
-                letterSpacing: `0.63em`,
-                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+                lineHeight: `15vh`,
+                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+                fontSize: `6vw`,
               }}
             >
               INOVADOR,
-            </h1>
-            <h1
-              style={{
-                textSize: `6vw`,
-                letterSpacing: `0.63em`,
-                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
-              }}
-            >
+              <br />
               SURPRENDENTE
-            </h1>
-            <h1
-              style={{
-                textSize: `6vw`,
-                letterSpacing: `0.63em`,
-                textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
-              }}
-            >
-              E TECNOLÓGICO
+              <br />E TECNOLÓGICO
             </h1>
           </div>
         </div>
         <div
           style={{
-            paddingLeft: `2vw`,
-            paddingRight: `2vw`,
+            paddingLeft: `4vw`,
+            paddingRight: `4vw`,
             justifyItems: "center",
             alignItems: "center",
           }}
-          class="px-20 absolute -bottom-14"
+          class="px-20 -bottom-14"
         >
           <div
-            class="px-5 grid grid-cols-4 leading-loose tracking-widest text-white bg-green-dark divide-x
-          divide-green-500 divide-opacity-25 divide-2 rounded-xl text-center font-mono justify-evenly items-center"
+            class="px-5 grid grid-cols-4 leading-loose text-white bg-green-dark divide-x
+          divide-green-500 divide-opacity-25 divide-2 rounded-xl font-mono justify-evenly"
             style={{
-              textSize: `4vw`,
-              borderRadius: `0.75rem`,
+              zIndex: `1`,
+              marginBottom: `-6vh`,
+              display: `flex`,
+              justifyContent: `center`,
+              alignItems: `center`,
+              textAlign: `center`,
+              letterSpacing: `1vw`,
+              fontSize: `1vw`,
               height: `12vh`,
               width: `100%`,
             }}
           >
-            <p class="">SEDE EMPRESARIAL</p>
-            <p class="">ALTA RENTABILIDADE</p>
-            <p class="">VALORIZAÇÃO IMOBILIÁRIA</p>
-            <p class="">CONTRATOS ESTICADOS</p>
+            <p
+              style={{
+                height: `12vh`,
+                width: `100%`,
+              }}
+            >
+              SEDE EMPRESARIAL
+            </p>
+            <p
+              style={{
+                height: `12vh`,
+                width: `100%`,
+              }}
+            >
+              ALTA RENTABILIDADE
+            </p>
+            <p
+              style={{
+                height: `12vh`,
+                width: `100%`,
+              }}
+            >
+              VALORIZAÇÃO IMOBILIÁRIA
+            </p>
+            <p
+              style={{
+                height: `12vh`,
+                width: `100%`,
+              }}
+            >
+              CONTRATOS ESTICADOS
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 content-center flex">
+    <section style={{ zindex: `0` }}
+      class="w-full h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 content-center flex"
+    >
       <div
         style={{ padding: `2vw`, width: `100vw` }}
         class="grid grid-cols-2 items-center"
       >
-        <div class="px-3">
+        <div style={{ paddingRight: `5vw`, paddingLeft: `5vw` }}>
           <StaticImage src="../images/Mask Group.png" class="" quality={100} />
         </div>
         <div class="px-3">
@@ -103,13 +122,14 @@ const IndexPage = () => (
             UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
           </h2>
           <p
-            class="mt-14 font-mono text-center"
+            class="font-mono text-center"
             style={{
-              fontSize: `2vw`,
-              lineHeight: `171.2%`,
+              fontSize: `1.5vw`,
+              lineHeight: `2vw`,
               textAlign: `justify`,
               letterSpacing: `0.48em`,
               color: `#2E2E2E`,
+              paddingTop: `10vh`,
             }}
           >
             O Jardins Medical traz um novo conceito de excelência, com espaços
@@ -256,7 +276,7 @@ const IndexPage = () => (
       <h1
         class="text-white font-mono font-thin pt-80"
         style={{
-          width:`100%`,
+          width: `100%`,
           fontSize: `7vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
@@ -315,9 +335,9 @@ const IndexPage = () => (
       <h1
         class="text-white font-mono leading-relaxed tracking-widest text-9xl px-12 font-thin pt-60 w-full"
         style={{
-          fontSize: `48px`,
+          fontSize: `8vw`,
           lineHeight: `171.2%`,
-          textAlign: `center`,
+          textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
@@ -330,7 +350,7 @@ const IndexPage = () => (
         style={{
           fontSize: `14px`,
           lineHeight: `171.2%`,
-          textAlign: `center`,
+          textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
@@ -341,17 +361,18 @@ const IndexPage = () => (
       </p>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${auditorio})`,
+        height: `40vh`,
       }}
     >
       <h1
         class="text-white px-12 font-mono  tracking-widest text-9xl text-right font-thin pt-40  w-full"
         style={{
-          fontSize: `48px`,
+          fontSize: `8vw`,
           lineHeight: `171.2%`,
-          textAlign: `center`,
+          textAlign: `right`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
@@ -364,7 +385,7 @@ const IndexPage = () => (
         style={{
           fontSize: `14px`,
           lineHeight: `171.2%`,
-          textAlign: `center`,
+          textAlign: `right`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
@@ -379,7 +400,7 @@ const IndexPage = () => (
       <h1
         class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10 pb-10 w-full"
         style={{
-          fontSize: `48px`,
+          fontSize: `4vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.54em`,
