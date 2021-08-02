@@ -20,13 +20,17 @@ const IndexPage = () => (
       <link rel="icon" href="..\images\favicon.ico" />
       <div class="">
         <Header />
-        <div style={{ paddingTop: `10vh`, width: `60vw` }}>
-          <div class="px-20 font-mono text-justify text-white ">
+        <div style={{ paddingTop: `10vh`}}>
+          <div class="text-justify text-white ">
             <h1
               style={{
-                lineHeight: `15vh`,
+                paddingLeft: `5vw`,
+                paddingBottom: `20vh`,
+                lineHeight: `13vh`,
                 textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-                fontSize: `6vw`,
+                fontSize: `3vw`,
+                fontFamily: "mono",
+                letterSpacing: `2vh`,
               }}
             >
               INOVADOR,
@@ -42,62 +46,64 @@ const IndexPage = () => (
             paddingRight: `4vw`,
             justifyItems: "center",
             alignItems: "center",
+            position: `absolute`,
+            bottom: `-6vh`,
           }}
-          class="px-20 -bottom-14"
         >
           <div
-            class="px-5 grid grid-cols-4 leading-loose text-white bg-green-dark divide-x
-          divide-green-500 divide-opacity-25 divide-2 rounded-xl font-mono justify-evenly"
+            class="text-white bg-green-dark rounded-xl font-mono"
             style={{
+              display: "flex",
+              paddingLeft: `5vw`,
+              paddingRight: `5vw`,
               zIndex: `1`,
-              marginBottom: `-6vh`,
-              display: `flex`,
-              justifyContent: `center`,
               alignItems: `center`,
               textAlign: `center`,
-              letterSpacing: `1vw`,
+              justifyContent: `space-between`,
+              letterSpacing: `.1vh`,
               fontSize: `1vw`,
               height: `12vh`,
-              width: `100%`,
+              width: `90vw`,
+              lineHeight: `1vw`,
             }}
           >
-            <p
-              style={{
-                height: `12vh`,
-                width: `100%`,
-              }}
-            >
-              SEDE EMPRESARIAL
-            </p>
-            <p
-              style={{
-                height: `12vh`,
-                width: `100%`,
-              }}
-            >
-              ALTA RENTABILIDADE
-            </p>
-            <p
-              style={{
-                height: `12vh`,
-                width: `100%`,
-              }}
-            >
-              VALORIZAÇÃO IMOBILIÁRIA
-            </p>
-            <p
-              style={{
-                height: `12vh`,
-                width: `100%`,
-              }}
-            >
-              CONTRATOS ESTICADOS
-            </p>
+            <p>SEDE EMPRESARIAL</p>
+            <svg height="50" width="2">
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="50"
+                style={{ stroke: `green`, strokeWidth: `2` }}
+              />
+            </svg>
+            <p>ALTA RENTABILIDADE</p>{" "}
+            <svg height="50" width="2">
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="50"
+                style={{ stroke: `green`, strokeWidth: `2` }}
+              />
+            </svg>
+            <p>VALORIZAÇÃO IMOBILIÁRIA</p>{" "}
+            <svg height="50" width="2">
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="50"
+                style={{ stroke: `green`, strokeWidth: `2` }}
+              />
+            </svg>
+            <p>CONTRATOS ESTICADOS</p>
           </div>
         </div>
       </div>
     </section>
-    <section style={{ zindex: `0` }}
+    <section
+      style={{ zindex: `0` }}
       class="w-full h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 content-center flex"
     >
       <div
@@ -111,8 +117,8 @@ const IndexPage = () => (
           <h2
             class="leading-relaxed tracking-widest font-mono text-black text-right"
             style={{
-              fontSize: `4vw`,
-              lineHeight: `171.2%`,
+              fontSize: `4vh`,
+              lineHeight: `4vh`,
               textAlign: `right`,
               letterSpacing: `0.63em`,
               color: `#2E2E2E`,
@@ -129,7 +135,7 @@ const IndexPage = () => (
               textAlign: `justify`,
               letterSpacing: `0.48em`,
               color: `#2E2E2E`,
-              paddingTop: `10vh`,
+              paddingTop: `5vh`,
             }}
           >
             O Jardins Medical traz um novo conceito de excelência, com espaços
