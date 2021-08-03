@@ -9,7 +9,7 @@ import Header from "../components/header"
 import auditorio from "../images/auditorio.png"
 import lobby from "../images/lobby.png"
 import rooftop from "../images/rooftop.png"
-
+import Footer from "../components/footer"
 const IndexPage = () => (
   <div class="">
     <section
@@ -18,87 +18,85 @@ const IndexPage = () => (
     >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
-      <div class="">
-        <Header />
-        <div style={{ paddingTop: `10vh`}}>
-          <div class="text-justify text-white ">
-            <h1
-              style={{
-                paddingLeft: `5vw`,
-                paddingBottom: `20vh`,
-                lineHeight: `13vh`,
-                textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-                fontSize: `3vw`,
-                fontFamily: "mono",
-                letterSpacing: `2vh`,
-              }}
-            >
-              INOVADOR,
-              <br />
-              SURPRENDENTE
-              <br />E TECNOLÓGICO
-            </h1>
-          </div>
-        </div>
-        <div
-          style={{
-            paddingLeft: `4vw`,
-            paddingRight: `4vw`,
-            justifyItems: "center",
-            alignItems: "center",
-            position: `absolute`,
-            bottom: `-6vh`,
-          }}
-        >
-          <div
-            class="text-white bg-green-dark rounded-xl font-mono"
+      <Header />
+      <div style={{ paddingTop: `10vh` }}>
+        <div class="text-justify text-white ">
+          <h1
             style={{
-              display: "flex",
               paddingLeft: `5vw`,
-              paddingRight: `5vw`,
-              zIndex: `1`,
-              alignItems: `center`,
-              textAlign: `center`,
-              justifyContent: `space-between`,
-              letterSpacing: `.1vh`,
-              fontSize: `1vw`,
-              height: `12vh`,
-              width: `90vw`,
-              lineHeight: `1vw`,
+              paddingBottom: `20vh`,
+              lineHeight: `13vh`,
+              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+              fontSize: `3vw`,
+              fontFamily: "mono",
+              letterSpacing: `2vh`,
             }}
           >
-            <p>SEDE EMPRESARIAL</p>
-            <svg height="50" width="2">
-              <line
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="50"
-                style={{ stroke: `green`, strokeWidth: `2` }}
-              />
-            </svg>
-            <p>ALTA RENTABILIDADE</p>{" "}
-            <svg height="50" width="2">
-              <line
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="50"
-                style={{ stroke: `green`, strokeWidth: `2` }}
-              />
-            </svg>
-            <p>VALORIZAÇÃO IMOBILIÁRIA</p>{" "}
-            <svg height="50" width="2">
-              <line
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="50"
-                style={{ stroke: `green`, strokeWidth: `2` }}
-              />
-            </svg>
-            <p>CONTRATOS ESTICADOS</p>
-          </div>
+            INOVADOR,
+            <br />
+            SURPRENDENTE
+            <br />E TECNOLÓGICO
+          </h1>
+        </div>
+      </div>
+      <div
+        style={{
+          paddingLeft: `4vw`,
+          paddingRight: `4vw`,
+          justifyItems: "center",
+          alignItems: "center",
+          position: `absolute`,
+          bottom: `-6vh`,
+        }}
+      >
+        <div
+          class="text-white bg-green-dark rounded-xl font-mono"
+          style={{
+            display: "flex",
+            paddingLeft: `5vw`,
+            paddingRight: `5vw`,
+            zIndex: `1`,
+            alignItems: `center`,
+            textAlign: `center`,
+            justifyContent: `space-between`,
+            letterSpacing: `.1vh`,
+            fontSize: `1vw`,
+            height: `12vh`,
+            width: `90vw`,
+            lineHeight: `1vw`,
+          }}
+        >
+          <p>SEDE EMPRESARIAL</p>
+          <svg height="50" width="2">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="50"
+              style={{ stroke: `green`, strokeWidth: `2` }}
+            />
+          </svg>
+          <p>ALTA RENTABILIDADE</p>{" "}
+          <svg height="50" width="2">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="50"
+              style={{ stroke: `green`, strokeWidth: `2` }}
+            />
+          </svg>
+          <p>VALORIZAÇÃO IMOBILIÁRIA</p>{" "}
+          <svg height="50" width="2">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="50"
+              style={{ stroke: `green`, strokeWidth: `2` }}
+            />
+          </svg>
+          <p>CONTRATOS ESTICADOS</p>
         </div>
       </div>
     </section>
@@ -150,10 +148,10 @@ const IndexPage = () => (
     </section>
 
     <section
-      class="bg-cover bg-center bg-local bg-no-repeat grid grid-cols-2 h-5/6"
+      class="bg-cover bg-center bg-local bg-no-repeat grid grid-cols-2"
       style={{
         backgroundImage: `url(${bg3})`,
-        height: `90vh`,
+        height: `80vh`,
         paddingRight: `3vw`,
       }}
     >
@@ -180,14 +178,18 @@ const IndexPage = () => (
         <StaticImage
           src="../images/compass.png"
           quality={100}
+          style={{ height: `8vw`, width: `8vw` }}
           placeholder="blurred"
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1
+            style={{ fontSize: `1.5vw`, textAlign: `left` }}
+            class="font-mono"
+          >
             5635,26
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             PARA SALAS MEDICAS
           </h2>
         </div>
@@ -200,10 +202,10 @@ const IndexPage = () => (
           height={100}
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
             5 ANDARES DE ESTACIONAMENTO
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             TOTALIZANDO MAIS DE 150 VAGAS NA GARAGEM
           </h2>
         </div>
@@ -215,11 +217,11 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
             {" "}
             MULTIPLAS ESPECIALIDADES MEDICAS
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             DIVERSAS ESPECIALIDADES EM UM SÓ LOCAL
           </h2>
         </div>
@@ -232,10 +234,10 @@ const IndexPage = () => (
           height={100}
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
             RDC50
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             CONFORMIDADE COM AS NORMAS DA ANVISA
           </h2>
         </div>
@@ -247,10 +249,10 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
             ELEVADORES MODERNOS
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             A ÚLTIMA TECNOLOGIA EM FLUXO DE PACIENTES
           </h2>
         </div>
@@ -261,10 +263,10 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1vw` }} class="font-mono">
+          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
             MINI SHOPPING
           </h1>
-          <h2 style={{ fontSize: `0.8vw` }} class="font-mono pt-2">
+          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
             ESTRUTURA COMPLETA{" "}
           </h2>
         </div>
@@ -274,92 +276,116 @@ const IndexPage = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-5/6  justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
-        backgroundImage: `url(${bg4})`,
+        backgroundImage: `url(${lobby})`,
+        paddingLeft: `20vw`,
+        paddingRight: `20vw`,
       }}
     >
       <h1
-        class="text-white font-mono font-thin pt-80"
+        class="text-white font-mono font-thin"
         style={{
-          width: `100%`,
-          fontSize: `7vw`,
+          paddingTop: `20vh`,
+          fontSize: `5vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
-          color: `#`,
+          color: `#ffffff`,
           textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
         }}
       >
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
-      <div class="flex justify-center" style={{ align: `center` }}>
-        <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
+      <div
+        class="flex justify-center"
+        style={{ align: `center`, paddingBottom: `20vh` }}
+      >
+        <button
+          style={{
+            fontSize: `1.25vw`,
+            lineHeight: `1.75vw`,
+            width: `11vw`,
+            letterSpacing: `0.1vw`,
+            color: `#033415`,
+            backgroundColor: `#ffffff`,
+            padding: `0.75rem`,
+            borderRadius: `9999px`,
+          }}
+          class="bg-green-dark rounded-full text-white w-1/3 text-center font-mono"
+        >
           SAIBA MAIS
         </button>
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-101 align- justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${lobby})`,
+        paddingLeft: `20vw`,
+        paddingRight: `20vw`,
       }}
     >
       <h1
-        class="text-white font-mono leading-relaxed tracking-widest text-9xl text-center font-thin pt-60 w-full"
+        class="text-white font-mono leading-relaxed tracking-widest text-center font-thin w-full"
         style={{
-          fontSize: `48px`,
-          lineHeight: `171.2%`,
+          fontSize: `6vh`,
+          lineHeight: `170%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+          paddingTop: `30vh`,
         }}
       >
         LOBBY
       </h1>
       <p
-        class=" text-center text-white font-bold text-3xl font-mono leading-relaxed  tracking-widest "
+        class=" text-center text-white font-bold font-mono leading-relaxed tracking-widest "
         style={{
-          fontSize: `14px`,
-          lineHeight: `171.2%`,
+          fontSize: `1vw`,
+          lineHeight: `170%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+          paddingBottom: `30vh`,
         }}
       >
         LUXUOSO LOBBY PARA PRESERVAR O ATENDENDIMENTO
       </p>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-101 justify-center bg-clip-border"
+      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${rooftop})`,
+        paddingLeft: `5vw`,
       }}
     >
       <h1
-        class="text-white font-mono leading-relaxed tracking-widest text-9xl px-12 font-thin pt-60 w-full"
+        class="text-white font-mono leading-relaxed tracking-widest text-9xl font-thin pt-60 w-full"
         style={{
-          fontSize: `8vw`,
-          lineHeight: `171.2%`,
+          fontSize: `8vh`,
+          lineHeight: `170%`,
           textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+          paddingTop: `30vh`,
         }}
       >
         ROOFTOP
       </h1>
       <p
-        class="  text-white font-bold text-3xl font-mono leading-relaxed px-14 tracking-widest "
+        class="text-white font-bold font-mono leading-relaxed tracking-widest "
         style={{
-          fontSize: `14px`,
-          lineHeight: `171.2%`,
+          fontSize: `1vw`,
+          lineHeight: `170%`,
           textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+          paddingBottom: `30vh`,
         }}
       >
         CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E
@@ -370,31 +396,33 @@ const IndexPage = () => (
       class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${auditorio})`,
-        height: `40vh`,
+        paddingRight: `5vw`,
       }}
     >
       <h1
-        class="text-white px-12 font-mono  tracking-widest text-9xl text-right font-thin pt-40  w-full"
+        class="text-white px-12 font-mono  tracking-widest text-right font-thin pt-40  w-full"
         style={{
-          fontSize: `8vw`,
-          lineHeight: `171.2%`,
+          fontSize: `8vh`,
+          lineHeight: `170%`,
           textAlign: `right`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
+          paddingTop: `20vh`,
         }}
       >
         AUDITÓRIO <br /> PRINCIPAL
       </h1>
       <p
-        class=" text-right px-14 text-white font-bold text-3xl font-mono leading-relaxed h-screen tracking-widest "
+        class="text-white font-bold font-mono leading-relaxed tracking-widest "
         style={{
-          fontSize: `14px`,
-          lineHeight: `171.2%`,
+          fontSize: `1vw`,
+          lineHeight: `170%`,
           textAlign: `right`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
+          paddingBottom: `20vh`,
         }}
       >
         AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
@@ -449,58 +477,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <footer class="bg-cover py-5 grid grid-cols-5 h-28 justify-between place-items-center bg-gradient-to-tl from-white via-white to-gray-300">
-      <a href="#">
-        <div class="">
-          <StaticImage
-            src="../images/face.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
-      </a>
-      <a href="#">
-        <div>
-          <StaticImage
-            src="../images/tt.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
-      </a>
-      <a href="#">
-        <div>
-          <StaticImage
-            src="../images/insta.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
-      </a>
-      <a href="#">
-        <div>
-          <StaticImage
-            src="../images/linkedin.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
-      </a>
-      <a href="#">
-        <div>
-          <StaticImage
-            src="../images/youtube.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
-      </a>
-    </footer>
+    <Footer />
   </div>
 )
 

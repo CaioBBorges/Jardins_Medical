@@ -22,6 +22,8 @@ function Header() {
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
               width: `11vw`,
+              padding: `1vw`,
+
               letterSpacing: `0.1vw`,
             }}
             activeStyle={{
@@ -31,7 +33,7 @@ function Header() {
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `0.75rem`,
+              padding: `1vw`,
               width: `11vw`,
               borderRadius: `9999px`,
             }}
@@ -40,11 +42,11 @@ function Header() {
           </Link>
           <Link
             to="/estrutura"
-            class="bg-green-dark font-mono rounded-full p-3"
+            class="bg-green-dark font-mono rounded-full"
             style={{
               marginRight: `3vw`,
               textAlign: "center",
-
+              padding: `1vw`,
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
               width: `11vw`,
@@ -57,7 +59,7 @@ function Header() {
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `0.75rem`,
+              padding: `1vw`,
               width: `11vw`,
               borderRadius: `9999px`,
             }}
@@ -66,11 +68,11 @@ function Header() {
           </Link>
           <Link
             to="/localizacao"
-            class="bg-green-dark font-mono rounded-full p-3"
+            class="bg-green-dark font-mono rounded-full"
             style={{
               marginRight: `3vw`,
               textAlign: "center",
-
+              padding: `1vw`,
               fontSize: `1.25vw`,
               lineHeight: `1.75vw`,
               width: `11vw`,
@@ -83,7 +85,7 @@ function Header() {
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `0.75rem`,
+              padding: `1vw`,
               width: `11vw`,
               borderRadius: `9999px`,
             }}
@@ -92,7 +94,7 @@ function Header() {
           </Link>
           <Link
             to="/contato"
-            class="bg-green-dark font-mono rounded-full p-3"
+            class="bg-green-dark font-mono rounded-full"
             style={{
               marginRight: `3vw`,
               textAlign: "center",
@@ -100,6 +102,7 @@ function Header() {
               lineHeight: `1.75vw`,
               width: `11vw`,
               letterSpacing: `0.1vw`,
+              padding: `1vw`,
             }}
             activeStyle={{
               fontSize: `1.25vw`,
@@ -108,7 +111,7 @@ function Header() {
               letterSpacing: `0.1vw`,
               color: `#033415`,
               backgroundColor: `#ffffff`,
-              padding: `0.75rem`,
+              padding: `1vw`,
               width: `11vw`,
               borderRadius: `9999px`,
             }}

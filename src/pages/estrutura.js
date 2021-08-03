@@ -29,7 +29,7 @@ const estrutura = () => (
             paddingTop: `10vh`,
             paddingRight: `10vw`,
             paddingLeft: `10vw`,
-            paddingBottom: `10vw`,
+            paddingBottom: `150vh`,
             lineHeight: `4vw`,
             textAlign: `center`,
             letterSpacing: `0.63em`,
@@ -39,35 +39,30 @@ const estrutura = () => (
         >
           ESTRUTURA PERFEITA PARA VOCÊ FOCAR NO QUE REALMENTE IMPORTA:
           <br />
-          SEU PACIENTE.
+          SEU PACIENTE
         </h1>
       </div>
     </section>
     <section
-      class="bg-cover bg-no-repeat bg-clip-border"
+      class="bg-cover bg-no-repeat bg-clip-border grid grid-rows-2"
       style={{
         backgroundImage: `url(${bge2})`,
         resize: `both`,
-        display: `flex`,
         backgroundAttachment: `local`,
-        height: `90vh`,
+        height: `80vh`,
       }}
     >
       <p
         style={{
-          marginTop: `5vh`,
-          padding: `5vh`,
-          marginBotom: `55vh`,
-          marginLeft: `5vh`,
-          marginRight: `5vh`,
-          width: `80vw`,
+          padding: `3vw`,
+          margin: `5vw`,
           background: ` rgba(200, 200, 200, 0.05)`,
           backdropFilter: `blur(3px)`,
-          borderRadius: `2rem`,
-          fontSize: `2vw`,
-          lineHeight: `2vw`,
-          textAlign: `center`,
-          letterSpacing: `1vw`,
+          borderRadius: `1rem`,
+          fontSize: `2vh`,
+          lineHeight: `3vh`,
+          textAlign: `justify`,
+          letterSpacing: `1.2vw`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 7px rgba(0, 0, 0, 0.8), 4px 9px 34px rgba(0, 0, 0, 0.8)`,
         }}
@@ -87,8 +82,8 @@ const estrutura = () => (
     >
       <div
         style={{
-          paddingTop: `20vh`,
-          paddingBottom: `20vh`,
+          paddingTop: `10vh`,
+          paddingBottom: `10vh`,
           paddingRight: `8vw`,
           paddingLeft: `8vw`,
         }}
@@ -98,7 +93,7 @@ const estrutura = () => (
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/lobby_e.svg"
-            style={{ width: `18vw`, height: `18vh` }}
+            style={{ height: `40vh`, width: `18vw` }}
             quality={100}
             placeholder="blurred"
             layout="fixed"
@@ -106,20 +101,31 @@ const estrutura = () => (
           <div
             style={{
               width: `18vw`,
-
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
           >
             <h1
-              style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
+              style={{
+                fontSize: `1.5vw`,
+                textAlign: `center`,
+                width: `18vw`,
+                height: `2vw`,
+                padding: `2vw`,
+              }}
               class="font-bold text-white font-mono"
             >
               LOBBY
             </h1>
             <p
-              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
-              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
+              style={{
+                fontSize: `1vw`,
+                textAlign: `center`,
+                width: `18vw`,
+                height: `18vw`,
+                padding: `2vw`,
+              }}
+              class="font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
             >
               {" "}
               LOBBY PERFEITO PARA RECEBER TODO O CORPO MÉDICO E OS PACIENTES,
@@ -296,7 +302,9 @@ const estrutura = () => (
         </div>
         {/* SEGUNDO COMPONENTE  */}
         <div>
-          <h1 class="text-xl lg:text-4xl">Instalações Prediais Ordinárias e Especiais.</h1>
+          <h1 class="text-xl lg:text-4xl">
+            Instalações Prediais Ordinárias e Especiais.
+          </h1>
           <ul>
             <li>Instalações hidro-sanitárias</li>
             <li>instalações elétricas e eletrônicas</li>
@@ -315,7 +323,10 @@ const estrutura = () => (
         </div>
         {/* QUARTO COMPONENTE  */}
         <div>
-          <h1 class="text-xl lg:text-4xl"> Condições de Segurança Contra Incêndio. </h1>
+          <h1 class="text-xl lg:text-4xl">
+            {" "}
+            Condições de Segurança Contra Incêndio.{" "}
+          </h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
@@ -362,60 +373,50 @@ const estrutura = () => (
       </div>
     </section>
     <footer
-      class="bg-cover py-5 grid grid-cols-5 h-28 justify-between place-items-center"
+      class="bg-cover grid grid-cols-5 justify-between place-items-center"
       style={{
-        backgroundImage: `url(${footer})`,
+        padding: `2vh`,
       }}
     >
       <a href="#">
-        <div class="">
-          <StaticImage
-            src="../images/face.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
+        <StaticImage
+          src="../images/face.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-        <div>
-          <StaticImage
-            src="../images/tt.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
+        <StaticImage
+          src="../images/tt.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-        <div>
-          <StaticImage
-            src="../images/insta.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
+        <StaticImage
+          src="../images/insta.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-        <div>
-          <StaticImage
-            src="../images/linkedin.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
+        <StaticImage
+          src="../images/linkedin.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-        <div>
-          <StaticImage
-            src="../images/youtube.svg"
-            quality={100}
-            placeholder="blurred"
-            layout="fixed"
-          />
-        </div>
+        <StaticImage
+          src="../images/youtube.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
     </footer>
   </div>
