@@ -129,7 +129,6 @@ const IndexPage = () => (
         </div>
         <div class="px-3">
           <h2
-            class="leading-relaxed tracking-widest font-mono text-black text-right"
             style={{
               fontSize: `4vh`,
               lineHeight: `4vh`,
@@ -137,13 +136,15 @@ const IndexPage = () => (
               letterSpacing: `0.63em`,
               color: `#2E2E2E`,
               wordBreak: `break-word`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
             }}
           >
             UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
           </h2>
           <p
-            class="font-mono text-center"
             style={{
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+
               fontSize: `1.6vw`,
               lineHeight: `3.5vh`,
               textAlign: `center`,
@@ -164,29 +165,42 @@ const IndexPage = () => (
     </section>
 
     <section
-      class="bg-cover bg-center bg-local bg-no-repeat grid grid-cols-2"
       style={{
         backgroundImage: `url(${bg3})`,
         height: `80vh`,
-        paddingRight: `3vw`,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
       }}
     >
       <div
-        class="text-white font-mono col-2 grid grid-cols-4 grid-rows-5 col-start-2 -mt-10 -mb-20 place-content-center	place-items-center"
+        class="col-2 grid grid-cols-4 grid-rows-5 col-start-2"
         src="../images/inovador.svg"
         style={{
+          padding: `3vw`,
+          color: `#ffffff`,
+          marginright: `10vw`,
+          marginLeft: `53vw`,
+          placeContent: `center`,
+          placeItems: `center`,
+          alignItems: `center`,
           backgroundImage: `url(${ola1})`,
           backgroundAttachment: `local`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
         }}
       >
         <h1
-          class="text-white w-full col-span-4 p-5 text-justify"
+          class="col-span-4"
           style={{
+            padding: `5v`,
+            width: `100%`,
             fontSize: `2vw`,
             lineHeight: `147.7%`,
             letterSpacing: `0.195em`,
             color: `#FFFFFF`,
             textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+            textAlign: `justify`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           }}
         >
           O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
@@ -292,15 +306,19 @@ const IndexPage = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${lobby})`,
         paddingLeft: `20vw`,
         paddingRight: `20vw`,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        width: `100%`,
+        justifyContent: `center`,
       }}
     >
       <h1
-        class="text-white font-mono font-thin"
+        class="font-mono font-thin"
         style={{
           paddingTop: `20vh`,
           fontSize: `5vw`,
@@ -319,14 +337,18 @@ const IndexPage = () => (
       >
         <button
           style={{
-            fontSize: `1.25vw`,
+            padding:`1vw`,
+            backgroundColor: `#033415`,
+            marginRight: `3vw`,
+            textAlign: "center",
+            fontSize: `1vw`,
             lineHeight: `1.75vw`,
             width: `11vw`,
+            padding: `1vw`,
+            borderRadius:`9999px`,
             letterSpacing: `0.1vw`,
-            color: `#033415`,
-            backgroundColor: `#ffffff`,
-            padding: `0.75rem`,
-            borderRadius: `9999px`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            color: `#ffffff`,
           }}
           class="bg-green-dark rounded-full text-white w-1/3 text-center font-mono"
         >
