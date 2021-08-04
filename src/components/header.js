@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 function Header() {
   return (
-    <div style={{ display: `flex`, flexDirection: `row`,width:`100%`, justifyContent:`space-between`,}} >
+    <div style={{ display: `flex`, flexDirection: `row`,width:`100%`,justifyContent:`space-between`,position: `absolute`}}>
       <StaticImage
         src="../images/logo.svg"
         style={{ width: `14vw`, height: `16vw` }}

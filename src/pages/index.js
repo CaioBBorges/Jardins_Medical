@@ -14,8 +14,9 @@ const IndexPage = () => (
   <div class="">
     <section
       style={{
+        width: "100%",
         backgroundImage: `url(${inovador})`,
-        backgroundSize: `cover`,
+        backgroundSize: `100%`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
       }}
@@ -23,33 +24,32 @@ const IndexPage = () => (
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
       <Header />
-      <div style={{ paddingTop: `10vh` }}>
-        <h1
-          style={{
-            color: `#ffffff`,
-            paddingLeft: `5vw`,
-            paddingBottom: `20vh`,
-            lineHeight: `13vh`,
-            textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-            fontSize: `3vw`,
-            fontFamily: "mono",
-            letterSpacing: `2vh`,
-            textAlign: `justify`,
-          }}
-        >
-          INOVADOR,
-          <br />
-          SURPRENDENTE
-          <br />E TECNOLÓGICO
-        </h1>
-      </div>
+      <h1
+        style={{
+          paddingTop: `30vw`,
+          color: `#ffffff`,
+          paddingLeft: `5vw`,
+          paddingBottom: `30vw`,
+          lineHeight: `13vw`,
+          textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+          fontSize: `3vw`,
+          fontFamily: "mono",
+          letterSpacing: `2vh`,
+          textAlign: `justify`,
+        }}
+      >
+        INOVADOR,
+        <br />
+        SURPRENDENTE
+        <br />E TECNOLÓGICO
+      </h1>
       <div
         style={{
           paddingLeft: `4vw`,
           paddingRight: `4vw`,
           justifyItems: "center",
           alignItems: "center",
-          position: `absolute`,
+          position: ``,
           bottom: `-6vh`,
         }}
       >
@@ -60,15 +60,14 @@ const IndexPage = () => (
             borderRadius: `0.75rem`,
             color: `#ffffff`,
             display: "flex",
-            paddingLeft: `5vw`,
-            paddingRight: `5vw`,
+            padding: `5vw`,
             zIndex: `1`,
             alignItems: `center`,
             textAlign: `center`,
             justifyContent: `space-between`,
             letterSpacing: `.1vh`,
             fontSize: `1vw`,
-            height: `12vh`,
+            height: `12vw`,
             width: `90vw`,
             lineHeight: `1vw`,
           }}
@@ -106,62 +105,66 @@ const IndexPage = () => (
           <p>CONTRATOS ESTICADOS</p>
         </div>
       </div>
-    </section>
-    <section
-      style={{
-        backgroundSize: `cover`,
-        backgroundRepeat: `no-repeat`,
-        backgroundAttachment: `local`,
-        zindex: `0`,
-        display: `flex`,
-        width: `100%`,
-        height: `80vh`,
-        alignContent: `center`,
-      }}
-      class="bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50"
-    >
-      <div
-        style={{ padding: `2vw`, width: `100vw` }}
-        class="grid grid-cols-2 items-center"
+      <section
+        style={{
+          backgroundSize: `cover`,
+          backgroundRepeat: `no-repeat`,
+          backgroundAttachment: `local`,
+          zindex: `0`,
+          display: `flex`,
+          width: `100%`,
+          height: `80vh`,
+          alignContent: `center`,
+        }}
+        class="bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50"
       >
-        <div style={{ paddingRight: `5vw`, paddingLeft: `5vw` }}>
-          <StaticImage src="../images/Mask Group.png" class="" quality={100} />
-        </div>
-        <div class="px-3">
-          <h2
-            style={{
-              fontSize: `4vh`,
-              lineHeight: `4vh`,
-              textAlign: `right`,
-              letterSpacing: `0.63em`,
-              color: `#2E2E2E`,
-              wordBreak: `break-word`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
-          </h2>
-          <p
-            style={{
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+        <div
+          style={{ padding: `2vw`, width: `100vw`, marginTop: `4vh` }}
+          class="grid grid-cols-2 items-center"
+        >
+          <div style={{ paddingRight: `5vw`, paddingLeft: `5vw` }}>
+            <StaticImage
+              src="../images/Mask Group.png"
+              class=""
+              quality={100}
+            />
+          </div>
+          <div class="px-3">
+            <h2
+              style={{
+                fontSize: `4vw`,
+                lineHeight: `4vh`,
+                textAlign: `right`,
+                letterSpacing: `0.63em`,
+                color: `#2E2E2E`,
+                wordBreak: `break-word`,
+                fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              }}
+            >
+              UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
+            </h2>
+            <p
+              style={{
+                fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
 
-              fontSize: `1.6vw`,
-              lineHeight: `3.5vh`,
-              textAlign: `center`,
-              letterSpacing: `0.48em`,
-              color: `#2E2E2E`,
-              paddingTop: `5vh`,
-            }}
-          >
-            O Jardins Medical traz um novo conceito de excelência, com espaços
-            amplos de atendimento, localização privilegiada E arquitetura
-            inovadora, Contará com profissionais que são referência em suas
-            áreas. todo projeto busca o melhor resultado para o paciente, e
-            também para o profissional de saúde. Estarão disponíveis para venda
-            salas para uso exclusivo da área de saúde.
-          </p>
+                fontSize: `1.6vw`,
+                lineHeight: `3.5vh`,
+                textAlign: `center`,
+                letterSpacing: `0.48em`,
+                color: `#2E2E2E`,
+                paddingTop: `5vh`,
+              }}
+            >
+              O Jardins Medical traz um novo conceito de excelência, com espaços
+              amplos de atendimento, localização privilegiada E arquitetura
+              inovadora, Contará com profissionais que são referência em suas
+              áreas. todo projeto busca o melhor resultado para o paciente, e
+              também para o profissional de saúde. Estarão disponíveis para
+              venda salas para uso exclusivo da área de saúde.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
 
     <section
@@ -212,14 +215,25 @@ const IndexPage = () => (
           placeholder="blurred"
           layout="fixed"
         />
-        <div class="text-white">
+        <div>
           <h1
-            style={{ fontSize: `1.5vw`, textAlign: `left` }}
-            class="font-mono"
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
           >
             5635,26
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
             PARA SALAS MEDICAS
           </h2>
         </div>
@@ -231,11 +245,25 @@ const IndexPage = () => (
           width={100}
           height={100}
         />
-        <div class="text-white">
-          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
+        <div>
+          <h1
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
             5 ANDARES DE ESTACIONAMENTO
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
             TOTALIZANDO MAIS DE 150 VAGAS NA GARAGEM
           </h2>
         </div>
@@ -247,11 +275,25 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
+          <h1
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
             {" "}
             MULTIPLAS ESPECIALIDADES MEDICAS
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
             DIVERSAS ESPECIALIDADES EM UM SÓ LOCAL
           </h2>
         </div>
@@ -264,10 +306,24 @@ const IndexPage = () => (
           height={100}
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
+          <h1
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
             RDC50
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
             CONFORMIDADE COM AS NORMAS DA ANVISA
           </h2>
         </div>
@@ -279,10 +335,24 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
+          <h1
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
             ELEVADORES MODERNOS
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
             A ÚLTIMA TECNOLOGIA EM FLUXO DE PACIENTES
           </h2>
         </div>
@@ -293,21 +363,51 @@ const IndexPage = () => (
           layout="fixed"
         />
         <div class="text-white">
-          <h1 style={{ fontSize: `1.5vw` }} class="font-mono">
+          <h1
+            style={{
+              color: `#ffffff`,
+              fontSize: `1.5vw`,
+              textAlign: `left`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
             MINI SHOPPING
           </h1>
-          <h2 style={{ fontSize: `1vw` }} class="font-mono pt-2">
-            ESTRUTURA COMPLETA{" "}
+          <h2
+            style={{
+              color: `#ffffff`,
+              fontSize: `1vw`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              paddingTop: `4vh`,
+            }}
+          >
+            ESTRUTURA COMPLETA
           </h2>
         </div>
-        <button class="col-span-4 bg-white rounded-full font-mono h-16 w-3/4 text-green-dark">
+        <button
+          class="col-span-4"
+          style={{
+            padding: `1vw`,
+            backgroundColor: `##ffffff`,
+            marginRight: `3vw`,
+            textAlign: "center",
+            fontSize: `1vw`,
+            lineHeight: `1.75vw`,
+            width: `11vw`,
+            padding: `1vw`,
+            borderRadius: `9999px`,
+            letterSpacing: `0.1vw`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            color: `#033415`,
+          }}
+        >
           RESERVE JÁ
         </button>
       </div>
     </section>
     <section
       style={{
-        backgroundImage: `url(${lobby})`,
+        backgroundImage: `url(${bg4})`,
         paddingLeft: `20vw`,
         paddingRight: `20vw`,
         backgroundSize: `cover`,
@@ -318,8 +418,9 @@ const IndexPage = () => (
       }}
     >
       <h1
-        class="font-mono font-thin"
         style={{
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          fontWeight: `100`,
           paddingTop: `20vh`,
           fontSize: `5vw`,
           lineHeight: `171.2%`,
@@ -337,7 +438,7 @@ const IndexPage = () => (
       >
         <button
           style={{
-            padding:`1vw`,
+            padding: `1vw`,
             backgroundColor: `#033415`,
             marginRight: `3vw`,
             textAlign: "center",
@@ -345,12 +446,11 @@ const IndexPage = () => (
             lineHeight: `1.75vw`,
             width: `11vw`,
             padding: `1vw`,
-            borderRadius:`9999px`,
+            borderRadius: `9999px`,
             letterSpacing: `0.1vw`,
             fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
             color: `#ffffff`,
           }}
-          class="bg-green-dark rounded-full text-white w-1/3 text-center font-mono"
         >
           SAIBA MAIS
         </button>
@@ -469,26 +569,26 @@ const IndexPage = () => (
         APRIMORAMENTO
       </p>
     </section>
-    <section class="bg-cover bg-center bg-no-repeat w-full flex flex-col h-screen align-center justify-center bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white">
+    <section style={{ width:`100%`,display:`flex`,flexDirection:`column`,textAlign:`center`,justifyContent:`center` }}
+    class="bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white">
       <h1
-        class=" text-black font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10 pb-10 w-full"
         style={{
-          paddingRight: `15vw`,
-          paddingLeft: `15vw`,
-          fontSize: `4vw`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          fontWeight: `100`,
+          padding: `10vh`,
+          fontSize: `5vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
-          letterSpacing: `0.54em`,
+          letterSpacing: `0.63em`,
+          color: ``,
+          textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
         }}
       >
         100% ADEQUADO <br /> AS EXIGÊNCIAS <br /> DOS ORGÃOS <br /> REGULADORES
       </h1>
       <div
         style={{
-          paddingRight: `3vw`,
-          paddingLeft: `3vw`,
-          paddingBottom: `3vw`,
-          paddingTop: `3vw`,
+          padding:`3vw`,
           display: `flex`,
           height: `15vh`,
         }}
