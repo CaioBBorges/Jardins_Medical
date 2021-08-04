@@ -10,15 +10,16 @@ import auditorio from "../images/auditorio.png"
 import lobby from "../images/lobby.png"
 import rooftop from "../images/rooftop.png"
 import Footer from "../components/footer"
+
 const IndexPage = () => (
-  <div class="">
+  <div>
     <section
       style={{
-        width: "100%",
         backgroundImage: `url(${inovador})`,
         backgroundSize: `100%`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
+        placeContent: `center`,
       }}
     >
       <title>JARDINS</title>
@@ -26,11 +27,12 @@ const IndexPage = () => (
       <Header />
       <h1
         style={{
-          paddingTop: `30vw`,
+          padding: `20vw`,
           color: `#ffffff`,
           paddingLeft: `5vw`,
-          paddingBottom: `30vw`,
-          lineHeight: `13vw`,
+          paddingRight: `0vw`,
+          paddingBottom: `10vh`,
+          lineHeight: `13vh`,
           textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
           fontSize: `3vw`,
           fontFamily: "mono",
@@ -43,134 +45,125 @@ const IndexPage = () => (
         SURPRENDENTE
         <br />E TECNOLÓGICO
       </h1>
+
       <div
         style={{
-          paddingLeft: `4vw`,
-          paddingRight: `4vw`,
-          justifyItems: "center",
-          alignItems: "center",
-          position: ``,
-          bottom: `-6vh`,
+          backgroundColor: `#033415`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          borderRadius: `0.75rem`,
+          color: `#ffffff`,
+          display: "flex",
+          padding: `5vw`,
+          zIndex: `1`,
+          alignItems: `center`,
+          textAlign: `center`,
+          justifyContent: `space-between`,
+          letterSpacing: `.1vh`,
+          fontSize: `1vw`,
+          height: `6vh`,
+          width: `90vw`,
+          lineHeight: `1vw`,
+          justifySelf: "auto",
+          alignSelf: "auto",
         }}
       >
-        <div
+        <p>SEDE EMPRESARIAL</p>
+        <svg
           style={{
-            backgroundColor: `#033415`,
-            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            borderRadius: `0.75rem`,
-            color: `#ffffff`,
-            display: "flex",
-            padding: `5vw`,
-            zIndex: `1`,
-            alignItems: `center`,
-            textAlign: `center`,
-            justifyContent: `space-between`,
-            letterSpacing: `.1vh`,
-            fontSize: `1vw`,
-            height: `12vw`,
-            width: `90vw`,
-            lineHeight: `1vw`,
+            height: `8vw`,
+            width: `1vw`,
+            stroke: `green`,
+            strokeWidth: `2`,
           }}
         >
-          <p>SEDE EMPRESARIAL</p>
-          <svg height="50" width="2">
-            <line
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="50"
-              style={{ stroke: `green`, strokeWidth: `2` }}
-            />
-          </svg>
-          <p>ALTA RENTABILIDADE</p>
-          <svg height="50" width="2">
-            <line
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="50"
-              style={{ stroke: `green`, strokeWidth: `2` }}
-            />
-          </svg>
-          <p>VALORIZAÇÃO IMOBILIÁRIA</p>
-          <svg height="50" width="2">
-            <line
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="50"
-              style={{ stroke: `green`, strokeWidth: `2` }}
-            />
-          </svg>
-          <p>CONTRATOS ESTICADOS</p>
+          <line x1="0" y1="0" x2="0" y2="200" />
+        </svg>
+        <p>ALTA RENTABILIDADE</p>
+        <svg
+          style={{
+            height: `8vw`,
+            width: `1vw`,
+            stroke: `green`,
+            strokeWidth: `2`,
+          }}
+        >
+          <line x1="0" y1="0" x2="0" y2="200" />
+        </svg>
+        <p>VALORIZAÇÃO IMOBILIÁRIA</p>
+        <svg
+          style={{
+            height: `8vw`,
+            width: `1vw`,
+            stroke: `green`,
+            strokeWidth: `2`,
+          }}
+        >
+          <line x1="0" y1="0" x2="0" y2="200" />
+        </svg>
+        <p>CONTRATOS ESTICADOS</p>
+      </div>
+    </section>
+    <section
+      style={{
+        zIndex: `0`,
+        display: `flex`,
+        width: `100%`,
+        alignContent: `center`,
+        backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
+      }}
+    >
+      <div
+        style={{
+          width: `80vw`,
+          paddingTop: `10vh`,
+          paddingBottom: `10vh`,
+          display: `grid`,
+          alignItems: `center`,
+        }}
+        class="grid-cols-2"
+      >
+        <div style={{ paddingRight: `2vw`, paddingLeft: `2vw` }}>
+          <StaticImage src="../images/Mask Group.png" quality={100} />
+        </div>
+        <div>
+          <h2
+            style={{
+              fontSize: `4vw`,
+              lineHeight: `3.5vw`,
+              textAlign: `right`,
+              letterSpacing: `1vw`,
+              color: `#2E2E2E`,
+              wordBreak: `break-word`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
+            UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
+          </h2>
+          <p
+            style={{
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              fontSize: `1.6vw`,
+              lineHeight: `1.6vw`,
+              textAlign: `justify`,
+              letterSpacing: `0.48em`,
+              color: `#2E2E2E`,
+              paddingTop: `5vh`,
+              paddingLeft: `2vw`,
+            }}
+          >
+            O Jardins Medical traz um novo conceito de excelência, com espaços
+            amplos de atendimento, localização privilegiada E arquitetura
+            inovadora, Contará com profissionais que são referência em suas
+            áreas. todo projeto busca o melhor resultado para o paciente, e
+            também para o profissional de saúde. Estarão disponíveis para venda
+            salas para uso exclusivo da área de saúde.
+          </p>
         </div>
       </div>
-      <section
-        style={{
-          backgroundSize: `cover`,
-          backgroundRepeat: `no-repeat`,
-          backgroundAttachment: `local`,
-          zindex: `0`,
-          display: `flex`,
-          width: `100%`,
-          height: `80vh`,
-          alignContent: `center`,
-        }}
-        class="bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50"
-      >
-        <div
-          style={{ padding: `2vw`, width: `100vw`, marginTop: `4vh` }}
-          class="grid grid-cols-2 items-center"
-        >
-          <div style={{ paddingRight: `5vw`, paddingLeft: `5vw` }}>
-            <StaticImage
-              src="../images/Mask Group.png"
-              class=""
-              quality={100}
-            />
-          </div>
-          <div class="px-3">
-            <h2
-              style={{
-                fontSize: `4vw`,
-                lineHeight: `4vh`,
-                textAlign: `right`,
-                letterSpacing: `0.63em`,
-                color: `#2E2E2E`,
-                wordBreak: `break-word`,
-                fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              }}
-            >
-              UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
-            </h2>
-            <p
-              style={{
-                fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-
-                fontSize: `1.6vw`,
-                lineHeight: `3.5vh`,
-                textAlign: `center`,
-                letterSpacing: `0.48em`,
-                color: `#2E2E2E`,
-                paddingTop: `5vh`,
-              }}
-            >
-              O Jardins Medical traz um novo conceito de excelência, com espaços
-              amplos de atendimento, localização privilegiada E arquitetura
-              inovadora, Contará com profissionais que são referência em suas
-              áreas. todo projeto busca o melhor resultado para o paciente, e
-              também para o profissional de saúde. Estarão disponíveis para
-              venda salas para uso exclusivo da área de saúde.
-            </p>
-          </div>
-        </div>
-      </section>
     </section>
-
     <section
       style={{
         backgroundImage: `url(${bg3})`,
-        height: `80vh`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
@@ -178,7 +171,6 @@ const IndexPage = () => (
     >
       <div
         class="col-2 grid grid-cols-4 grid-rows-5 col-start-2"
-        src="../images/inovador.svg"
         style={{
           padding: `3vw`,
           color: `#ffffff`,
@@ -189,6 +181,7 @@ const IndexPage = () => (
           alignItems: `center`,
           backgroundImage: `url(${ola1})`,
           backgroundAttachment: `local`,
+          backgroundSize: `cover`,
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
         }}
       >
@@ -385,20 +378,22 @@ const IndexPage = () => (
           </h2>
         </div>
         <button
-          class="col-span-4"
           style={{
+            gridColumn: `span 4 / span 4`,
             padding: `1vw`,
+            zIndex: `1`,
             backgroundColor: `##ffffff`,
             marginRight: `3vw`,
-            textAlign: "center",
+            textAlign: `center`,
             fontSize: `1vw`,
             lineHeight: `1.75vw`,
             width: `11vw`,
-            padding: `1vw`,
             borderRadius: `9999px`,
             letterSpacing: `0.1vw`,
             fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
             color: `#033415`,
+            marginBottom: `5vh`,
+            marginTop: `5vh`,
           }}
         >
           RESERVE JÁ
@@ -422,7 +417,7 @@ const IndexPage = () => (
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontWeight: `100`,
           paddingTop: `20vh`,
-          fontSize: `5vw`,
+          fontSize: `4vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
@@ -445,7 +440,6 @@ const IndexPage = () => (
             fontSize: `1vw`,
             lineHeight: `1.75vw`,
             width: `11vw`,
-            padding: `1vw`,
             borderRadius: `9999px`,
             letterSpacing: `0.1vw`,
             fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
@@ -459,15 +453,18 @@ const IndexPage = () => (
     <section
       class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
+        backgroundSize: `cover`,
         backgroundImage: `url(${lobby})`,
         paddingLeft: `20vw`,
         paddingRight: `20vw`,
+        height: `80vh`,
       }}
     >
       <h1
-        class="text-white font-mono leading-relaxed tracking-widest text-center font-thin w-full"
+        class="leading-relaxed tracking-widest text-center font-thin w-full"
         style={{
-          fontSize: `6vw`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          fontSize: `4vw`,
           lineHeight: `170%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
@@ -479,15 +476,16 @@ const IndexPage = () => (
         LOBBY
       </h1>
       <p
-        class=" text-center text-white font-bold font-mono leading-relaxed tracking-widest "
+        class="text-center text-white font-bold leading-relaxed tracking-widest"
         style={{
           fontSize: `1vw`,
           lineHeight: `170%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
-          paddingBottom: `30vh`,
         }}
       >
         LUXUOSO LOBBY PARA PRESERVAR O ATENDENDIMENTO
@@ -495,19 +493,19 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        width: "100%",
+        height: `80vh`,
         backgroundImage: `url(${rooftop})`,
-        backgroundSize: `100%`,
+        backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
         justifyContent: "center",
       }}
     >
       <h1
-        class="text-white font-mono leading-relaxed tracking-widest text-9xl font-thin pt-60 w-full"
+        class="text-white leading-relaxed tracking-widest text-9xl font-thin pt-60 w-full"
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-          fontSize: `8vw`,
+          fontSize: `4vw`,
           fontHeight: `100`,
           lineHeight: `170%`,
           textAlign: `left`,
@@ -515,13 +513,12 @@ const IndexPage = () => (
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
           paddingTop: `20vh`,
-          paddingLeft:`4.7vw`
+          paddingLeft: `4.7vw`,
         }}
       >
         ROOFTOP
       </h1>
       <p
-        class="text-white font-bold font-mono leading-relaxed tracking-widest "
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontHeight: `700`,
@@ -531,7 +528,6 @@ const IndexPage = () => (
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
-          paddingBottom: `20vh`,
           paddingLeft: `5vw`,
         }}
       >
@@ -541,9 +537,10 @@ const IndexPage = () => (
     </section>
     <section
       style={{
+        height: `80vh`,
         width: "100%",
         backgroundImage: `url(${auditorio})`,
-        backgroundSize: `100%`,
+        backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
         justifyContent: "center",
@@ -552,9 +549,9 @@ const IndexPage = () => (
       <h1
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-          fontSize: `8vw`,
+          fontSize: `4vw`,
           fontHeight: `100`,
-          lineHeight: `170%`,
+          lineHeight: `120%`,
           textAlign: `right`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
@@ -574,7 +571,6 @@ const IndexPage = () => (
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
-          paddingBottom: `20vh`,
           paddingRight: `5vw`,
         }}
       >
@@ -590,19 +586,19 @@ const IndexPage = () => (
         flexDirection: `column`,
         textAlign: `center`,
         justifyContent: `center`,
+        backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
       }}
-      class="bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white"
     >
       <h1
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-          fontWeight: `100`,
-          padding: `10vh`,
+          fontWeight: `1rem`,
+          padding: `10vw`,
           fontSize: `5vw`,
-          lineHeight: `1.2`,
+          lineHeight: `1`,
           textAlign: `center`,
-          letterSpacing: `0.63em`,
-          color: ``,
+          letterSpacing: `0.5`,
+          color: `#2E2E2E`,
           textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
         }}
       >
@@ -610,46 +606,63 @@ const IndexPage = () => (
       </h1>
       <div
         style={{
-          padding: `3vw`,
+          padding: `2vw`,
           display: `flex`,
           flexDirection: `row`,
           height: `15vh`,
           placeSelf: `center`,
           backgroundColor: `#2E2E2E`,
-          marginBottom: `10vw`,
           borderRadius: `2rem`,
+          alignContent: `center`,
+          justifyContent: `space-around`,
+          marginBottom: `10vh`,
         }}
       >
-        <StaticImage
-          src="../images/anvisa_e.png"
-          quality={100}
+        <div
           style={{
-            placeSelf: `center`,
-            margin: `5vw`,
+            display: `flex`,
+            alignItems: `center`,
+            alignContent: `center`,
+            alignSelf: `center`,
           }}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <StaticImage
-          src="../images/logo-abnt_e.png"
-          quality={100}
+        >
+          <StaticImage
+            src="../images/anvisa_e.png"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+        <div
           style={{
-            placeSelf: `center`,
-            margin: `5vw`,
+            display: `flex`,
+            alignItems: `center`,
+            alignContent: `center`,
+            alignSelf: `center`,
           }}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <StaticImage
-          src="../images/ans_e.png"
-          quality={100}
+        >
+          <StaticImage
+            src="../images/logo-abnt_e.png"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
+        <div
           style={{
-            placeSelf: `center`,
-            margin: `5vw`,
+            display: `flex`,
+            alignItems: `center`,
+            alignContent: `center`,
+            alignSelf: `center`,
           }}
-          placeholder="blurred"
-          layout="fixed"
-        />
+        >
+          <StaticImage
+            src="../images/ans_e.png"
+            quality={100}
+            placeholder="blurred"
+            layout="fixed"
+          />
+        </div>
       </div>
     </section>
     <Footer />

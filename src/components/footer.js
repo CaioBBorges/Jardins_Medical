@@ -5,79 +5,56 @@ import { Link } from "gatsby"
 function Footer() {
   return (
     <footer
-    
-    
-    style={{
-      display: `flex`,
-      flexDirection: `row`,
-      placeSelf: `center`,
-      borderRadius: `2rem`,
-      width: `100%`,
-      display: `flex`,
-      flexDirection: `row`,
-      justifyContent: `center`,
-    }}
-
-    class="bg-gradient-to-tl from-white via-white to-gray-300">
+      style={{
+        display: `flex`,
+        flexDirection: `row`,
+        placeSelf: `center`,
+        width: `100%`,
+        flexDirection: `row`,
+        justifyContent: `space-around`,
+        padding: `2rem`,
+        backgroundImage: `linear-gradient(to right, #d1d5db, #ffffff )`,
+      }}
+    >
       <a href="#">
-          <StaticImage
-            src="../images/face.svg"
-            quality={100}
-            style={{
-              placeSelf: `center`,
-              margin: `5vw`,
-            }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/face.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-          <StaticImage
-            src="../images/tt.svg"
-            quality={100}
-            style={{
-              placeSelf: `center`,
-              margin: `5vw`,
-            }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/tt.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-          <StaticImage
-            src="../images/insta.svg"
-            quality={100}
-            style={{
-              placeSelf: `center`,
-              margin: `5vw`,
-            }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/insta.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-          <StaticImage
-            src="../images/linkedin.svg"
-            quality={100}
-            style={{
-              placeSelf: `center`,
-              margin: `5vw`,
-            }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/linkedin.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
       <a href="#">
-          <StaticImage
-            src="../images/youtube.svg"
-            quality={100}
-            style={{
-              placeSelf: `center`,
-              margin: `5vw`,
-            }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/youtube.svg"
+          quality={100}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </a>
     </footer>
   )

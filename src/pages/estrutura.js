@@ -11,25 +11,27 @@ import footer from "../images/footer.png"
 
 const estrutura = () => (
   <div>
+    <title>JARDINS</title>
+    <link rel="icon" href="..\images\favicon.ico" />
     <section
-      class="bg-cover bg-local bg-no-repeat	bg-clip-border"
       style={{
+        width: "100%",
         backgroundImage: `url(${inovador})`,
-        resize: `both`,
-        overflow: `hidden`,
+        backgroundSize: `100%`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        placeContent: `center`,
       }}
     >
-      <title>JARDINS</title>
-      <link rel="icon" href="..\images\favicon.ico" />
       <Header />
       <div>
         <h1
           style={{
             fontSize: `3vw`,
-            paddingTop: `10vh`,
+            paddingTop: `40vw`,
             paddingRight: `10vw`,
             paddingLeft: `10vw`,
-            paddingBottom: `150vh`,
+            paddingBottom: `66vw`,
             lineHeight: `4vw`,
             textAlign: `center`,
             letterSpacing: `0.63em`,
@@ -47,9 +49,11 @@ const estrutura = () => (
       class="bg-cover bg-no-repeat bg-clip-border grid grid-rows-2"
       style={{
         backgroundImage: `url(${bge2})`,
-        resize: `both`,
+        height:`100vh`,
+        backgroundSize: `100%`,
+        backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
-        height: `80vh`,
+        placeContent:`center`
       }}
     >
       <p
