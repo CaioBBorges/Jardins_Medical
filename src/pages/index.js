@@ -329,7 +329,7 @@ const IndexPage = () => (
       <h1
         class="text-white font-mono leading-relaxed tracking-widest text-center font-thin w-full"
         style={{
-          fontSize: `6vh`,
+          fontSize: `6vw`,
           lineHeight: `170%`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
@@ -365,7 +365,7 @@ const IndexPage = () => (
       <h1
         class="text-white font-mono leading-relaxed tracking-widest text-9xl font-thin pt-60 w-full"
         style={{
-          fontSize: `8vh`,
+          fontSize: `8vw`,
           lineHeight: `170%`,
           textAlign: `left`,
           letterSpacing: `0.63em`,
@@ -396,13 +396,13 @@ const IndexPage = () => (
       class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${auditorio})`,
-        paddingRight: `5vw`,
       }}
     >
       <h1
-        class="text-white px-12 font-mono  tracking-widest text-right font-thin pt-40  w-full"
+        class="font-mono tracking-widest"
         style={{
-          fontSize: `8vh`,
+          fontSize: `8vw`,
+          fontHeight: `100`,
           lineHeight: `170%`,
           textAlign: `right`,
           letterSpacing: `0.63em`,
@@ -414,7 +414,7 @@ const IndexPage = () => (
         AUDITÓRIO <br /> PRINCIPAL
       </h1>
       <p
-        class="text-white font-bold font-mono leading-relaxed tracking-widest "
+        class="font-bold font-mono tracking-widest "
         style={{
           fontSize: `1vw`,
           lineHeight: `170%`,
@@ -423,6 +423,7 @@ const IndexPage = () => (
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
           paddingBottom: `20vh`,
+          paddingRight: `5vw`,
         }}
       >
         AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
@@ -432,8 +433,10 @@ const IndexPage = () => (
     </section>
     <section class="bg-cover bg-center bg-no-repeat w-full flex flex-col h-screen align-center justify-center bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white">
       <h1
-        class=" text-black px-12 font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10 pb-10 w-full"
+        class=" text-black font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10 pb-10 w-full"
         style={{
+          paddingRight:`15vw`,
+          paddingLeft:`15vw`,
           fontSize: `4vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
@@ -444,37 +447,36 @@ const IndexPage = () => (
       </h1>
       <div
         style={{
-          paddingRight: `1vw`,
-          paddingLeft: `1vw`,
-          display: `grid`,
-          placeSelf: `center`,
+          paddingRight: `3vw`,
+          paddingLeft: `3vw`,
+          paddingBottom: `3vw`,
+          paddingTop: `3vw`,
+          display: `flex`,
+          height:`15vh`
         }}
-        class="grid-cols-3 place-self-center py-8 bg-green-dark w-4/6 h-44 rounded-xl"
+        class="grid-cols-3 place-self-center bg-green-dark rounded-xl"
       >
-        <div style={{ placeSelf: `center` }}>
           <StaticImage
             src="../images/anvisa_e.png"
             quality={100}
+            style={{ width: `10vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
             placeholder="blurred"
             layout="fixed"
           />
-        </div>
-        <div style={{ placeSelf: `center` }}>
           <StaticImage
             src="../images/logo-abnt_e.png"
             quality={100}
+            style={{ width: `23.8vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
             placeholder="blurred"
             layout="fixed"
           />
-        </div>
-        <div style={{ placeSelf: `center` }}>
           <StaticImage
             src="../images/ans_e.png"
             quality={100}
+            style={{ width: `26.3vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
             placeholder="blurred"
             layout="fixed"
           />
-        </div>
       </div>
     </section>
     <Footer />
