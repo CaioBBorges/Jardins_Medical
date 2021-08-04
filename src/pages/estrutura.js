@@ -7,7 +7,7 @@ import bg4 from "../images/bg4.png"
 import Header from "../components/header"
 import bg3 from "../images/bg3.png"
 import auditorio from "../images/auditorio.png"
-import footer from "../images/footer.png"
+import Footer from "../components/footer"
 
 const estrutura = () => (
   <div>
@@ -49,11 +49,10 @@ const estrutura = () => (
       class="bg-cover bg-no-repeat bg-clip-border grid grid-rows-2"
       style={{
         backgroundImage: `url(${bge2})`,
-        height:`100vh`,
-        backgroundSize: `100%`,
+        backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
-        placeContent:`center`
+        placeContent: `center`,
       }}
     >
       <p
@@ -78,10 +77,13 @@ const estrutura = () => (
       </p>
     </section>
     <section
-      class="bg-cover bg-center bg-local bg-no-repeat"
       style={{
         backgroundImage: `url(${bg3})`,
-        placeContent: `center`,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        zIndex: `0`,
+        textAlign: `center`,
       }}
     >
       <div
@@ -93,7 +95,6 @@ const estrutura = () => (
         }}
         class="grid grid-cols-4 place-items-center place-content-start"
       >
-        {/* PRIMEIRO COMPONENTE  */}
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/lobby_e.svg"
@@ -131,15 +132,12 @@ const estrutura = () => (
               }}
               class="font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
             >
-              {" "}
               LOBBY PERFEITO PARA RECEBER TODO O CORPO MÉDICO E OS PACIENTES,
               IDEAL PARA INFORMAR, GUIAR E ORIENTAR AS PESSOAS PROCURANDO POR
               CONSULTÓRIOS.
             </p>
           </div>
         </div>
-
-        {/* SEGUNDA COMPONENTE  */}
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/salas_cirurgia.svg"
@@ -151,7 +149,6 @@ const estrutura = () => (
           <div
             style={{
               width: `18vw`,
-
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
             }}
@@ -160,7 +157,6 @@ const estrutura = () => (
               style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
               class="font-bold text-white font-mono"
             >
-              {" "}
               SALAS PARA CENTROS <br /> CIRUGICOS{" "}
             </h1>
             <p
@@ -172,7 +168,6 @@ const estrutura = () => (
             </p>
           </div>
         </div>
-        {/* TERCEIRO COMPONENTE  */}
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/rooftop_e.svg"
@@ -203,7 +198,6 @@ const estrutura = () => (
             </p>
           </div>
         </div>
-        {/* QUARTO COMPONENTE  */}
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
             src="../images/auditorio.png"
@@ -229,7 +223,6 @@ const estrutura = () => (
               style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
               class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
             >
-              {" "}
               UM LOCAL PARA INCENTIVAR PALESTRAS E REUNIÕES DE PESQUISA E
               ATUAÇÕES DOS PROFISSIONAIS DA ÁREA DA SAÚDE.
             </p>
@@ -244,8 +237,10 @@ const estrutura = () => (
       }}
     >
       <h1
-        class="font-mono font-thin pt-80"
+        class="font-thin"
         style={{
+          fontWeight: `100`,
+          paddingTop: `20vh`,
           width: `100%`,
           fontSize: `7vw`,
           lineHeight: `171.2%`,
@@ -253,20 +248,43 @@ const estrutura = () => (
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
         }}
       >
         A MELHOR <br /> EXPERIÊNCIA
       </h1>
-      <div class="flex justify-center" style={{ align: `center` }}>
-        <button class="bg-green-dark rounded-full h-20 text-white w-1/3 text-center font-mono p-3 mt-20 mb-80">
-          SAIBA MAIS
-        </button>
-      </div>
+      <button
+        style={{
+          padding: `1vw`,
+          backgroundColor: `#033415`,
+          marginRight: `3vw`,
+          textAlign: "center",
+          fontSize: `1vw`,
+          lineHeight: `1.75vw`,
+          width: `11vw`,
+          padding: `1vw`,
+          borderRadius: `9999px`,
+          letterSpacing: `0.1vw`,
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          color: `#ffffff`,
+          selfAlign: `center`,
+        }}
+      >
+        SAIBA MAIS
+      </button>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat h-screen justify-center bg-clip-border flex flex-col items-center	"
       style={{
         backgroundImage: `url(${auditorio})`,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        zIndex: `0`,
+        textAlign: `center`,
+        justifyContent: `center`,
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`,
       }}
     >
       <h1
@@ -288,13 +306,12 @@ const estrutura = () => (
       </h1>
       <div
         style={{
-          marginBottom: `2vw`,
+          marginBottom: `10vh`,
           fontSize: `1vw`,
           padding: `4vw`,
         }}
         class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-5/6 rounded-3xl"
       >
-        {/* PRIMEIRO COMPONENTE  */}
         <div>
           <h1 class="text-xl lg:text-4xl">Circulações Externas e Internas</h1>
           <ul>
@@ -304,7 +321,6 @@ const estrutura = () => (
             <li>Circulações verticais</li>
           </ul>
         </div>
-        {/* SEGUNDO COMPONENTE  */}
         <div>
           <h1 class="text-xl lg:text-4xl">
             Instalações Prediais Ordinárias e Especiais.
@@ -316,7 +332,6 @@ const estrutura = () => (
             <li>Instalações de climatização</li>
           </ul>
         </div>
-        {/* TERCEIRO COMPONENTE  */}
         <div>
           <h1 class="text-xl lg:text-4xl">Condições Ambientais de Conforto.</h1>
           <ul>
@@ -325,18 +340,15 @@ const estrutura = () => (
             <li>Conforto luminoso a partir de fonte natural</li>
           </ul>
         </div>
-        {/* QUARTO COMPONENTE  */}
         <div>
           <h1 class="text-xl lg:text-4xl">
-            {" "}
-            Condições de Segurança Contra Incêndio.{" "}
+            Condições de Segurança Contra Incêndio.
           </h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
           </ul>
         </div>
-        {/* QUINTO COMPONENTE  */}
         <div>
           <h1 class="text-xl lg:text-4xl">Controle de Infecção Hospitalar</h1>
           <ul>
@@ -344,7 +356,6 @@ const estrutura = () => (
             <li>Critérios de Projeto</li>
           </ul>
         </div>
-        {/* SEXTO COMPONENTE  */}
         <div class="grid grid-cols-3 place-items-center">
           <div class="">
             <StaticImage
@@ -376,53 +387,7 @@ const estrutura = () => (
         </div>
       </div>
     </section>
-    <footer
-      class="bg-cover grid grid-cols-5 justify-between place-items-center"
-      style={{
-        padding: `2vh`,
-      }}
-    >
-      <a href="#">
-        <StaticImage
-          src="../images/face.svg"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-      </a>
-      <a href="#">
-        <StaticImage
-          src="../images/tt.svg"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-      </a>
-      <a href="#">
-        <StaticImage
-          src="../images/insta.svg"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-      </a>
-      <a href="#">
-        <StaticImage
-          src="../images/linkedin.svg"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-      </a>
-      <a href="#">
-        <StaticImage
-          src="../images/youtube.svg"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-      </a>
-    </footer>
+    <Footer />
   </div>
 )
 

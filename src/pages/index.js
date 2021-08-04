@@ -167,237 +167,273 @@ const IndexPage = () => (
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
+        zIndex: `0`,
+        textAlign: `center`,
       }}
     >
       <div
-        class="col-2 grid grid-cols-4 grid-rows-5 col-start-2"
+        /* liberar lado esquerdo */
         style={{
-          padding: `3vw`,
-          color: `#ffffff`,
-          marginright: `10vw`,
-          marginLeft: `53vw`,
-          placeContent: `center`,
-          placeItems: `center`,
-          alignItems: `center`,
-          backgroundImage: `url(${ola1})`,
-          backgroundAttachment: `local`,
-          backgroundSize: `cover`,
-          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          marginright: `5vw`,
+          marginLeft: `55vw`,
+          width: `40vw`,
+          zIndex: `1`,
         }}
       >
-        <h1
-          class="col-span-4"
+        <div
+          /* liberar lado esquerdo */
           style={{
-            padding: `5v`,
-            width: `100%`,
-            fontSize: `2vw`,
-            lineHeight: `147.7%`,
-            letterSpacing: `0.195em`,
-            color: `#FFFFFF`,
-            textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
-            textAlign: `justify`,
-            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            display: `flex`,
+            flexDirection: "column",
+            backgroundImage: `url(${ola1})`,
+            backgroundAttachment: `local`,
+            backgroundSize: `cover`,
           }}
         >
-          O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
-        </h1>
-        <StaticImage
-          src="../images/compass.png"
-          quality={100}
-          style={{ height: `8vw`, width: `8vw` }}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <div>
           <h1
             style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
+              padding: `3vw`,
+              width: `100%`,
+              fontSize: `2vw`,
+              lineHeight: `140%`,
+              letterSpacing: `0.195em`,
+              color: `#FFFFFF`,
+              textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+              textAlign: `justify`,
               fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
             }}
           >
-            5635,26
+            O QUE O JARDINS MEDICAL OFERECE PARA VOCÊ?
           </h1>
-          <h2
+          <div
             style={{
-              color: `#ffffff`,
-              fontSize: `1vw`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
+              display: `flex`,
+              flexDirection: `row`,
+              justifyContent: `space-between`,
             }}
           >
-            PARA SALAS MEDICAS
-          </h2>
-        </div>
-        <StaticImage
-          src="../images/carro.png"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-          width={100}
-          height={100}
-        />
-        <div>
-          <h1
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/compass.png"
+                quality={100}
+                style={{ height: `8vw`, width: `8vw` }}
+                placeholder="blurred"
+                layout="fixed"
+              />
+              <div style={{ display: `flex`, flexDirection: `column` }}>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  5635,26
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  PARA SALAS MEDICAS
+                </h2>
+              </div>
+            </div>
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/carro.png"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+                width={100}
+                height={100}
+              />
+              <div>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  5 ANDARES DE ESTACIONAMENTO
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  TOTALIZANDO MAIS DE 150 VAGAS NA GARAGEM
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
             style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            5 ANDARES DE ESTACIONAMENTO
-          </h1>
-          <h2
-            style={{
-              color: `#ffffff`,
-              fontSize: `1vw`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
-            }}
-          >
-            TOTALIZANDO MAIS DE 150 VAGAS NA GARAGEM
-          </h2>
-        </div>
-
-        <StaticImage
-          src="../images/medica.png"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <div class="text-white">
-          <h1
-            style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              display: `flex`,
+              flexDirection: `row`,
+              justifyContent: `space-between`,
             }}
           >
             {" "}
-            MULTIPLAS ESPECIALIDADES MEDICAS
-          </h1>
-          <h2
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/medica.png"
+                quality={100}
+                style={{ height: `8vw`, width: `8vw` }}
+                placeholder="blurred"
+                layout="fixed"
+              />
+              <div style={{ display: `flex`, flexDirection: `column` }}>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  MULTIPLAS ESPECIALIDADES MEDICAS
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  DIVERSAS ESPECIALIDADES EM UM SÓ LOCAL
+                </h2>
+              </div>
+            </div>
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/anvisa.png"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+                width={100}
+                height={100}
+              />
+              <div>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  RDC50
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  CONFORMIDADE COM AS NORMAS DA ANVISA
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
             style={{
-              color: `#ffffff`,
+              display: `flex`,
+              flexDirection: `row`,
+              justifyContent: `space-between`,
+            }}
+          >
+            {" "}
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/elevador.png"
+                quality={100}
+                style={{ height: `8vw`, width: `8vw` }}
+                placeholder="blurred"
+                layout="fixed"
+              />
+              <div style={{ display: `flex`, flexDirection: `column` }}>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  ELEVADORES MODERNOS
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  A ÚLTIMA TECNOLOGIA EM FLUXO DE PACIENTES
+                </h2>
+              </div>
+            </div>
+            <div style={{ display: `flex`, flexDirection: `row` }}>
+              <StaticImage
+                src="../images/bolsa.png"
+                quality={100}
+                placeholder="blurred"
+                layout="fixed"
+                width={100}
+                height={100}
+              />
+              <div>
+                <h1
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1.5vw`,
+                    textAlign: `left`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  MINI SHOPPING
+                </h1>
+                <h2
+                  style={{
+                    color: `#ffffff`,
+                    fontSize: `1vw`,
+                    fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+                  }}
+                >
+                  ESTRUTURA COMPLETA
+                </h2>
+              </div>
+            </div>
+          </div>
+          <button
+            style={{
+              alignSelf: `center`,
+              padding: `1vw`,
+              backgroundColor: `#ffffff`,
+              marginBottom: `3vw`,
+              textAlign: "center",
+              contentAlign: "center",
               fontSize: `1vw`,
+              lineHeight: `1.75vw`,
+              width: `11vw`,
+              borderRadius: `9999px`,
+              letterSpacing: `0.1vw`,
               fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
+              color: `#033415`,
             }}
           >
-            DIVERSAS ESPECIALIDADES EM UM SÓ LOCAL
-          </h2>
+            RESERVE JÁ
+          </button>
         </div>
-        <StaticImage
-          src="../images/anvisa.png"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-          width={100}
-          height={100}
-        />
-        <div class="text-white">
-          <h1
-            style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            RDC50
-          </h1>
-          <h2
-            style={{
-              color: `#ffffff`,
-              fontSize: `1vw`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
-            }}
-          >
-            CONFORMIDADE COM AS NORMAS DA ANVISA
-          </h2>
-        </div>
-
-        <StaticImage
-          src="../images/elevador.png"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <div class="text-white">
-          <h1
-            style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            ELEVADORES MODERNOS
-          </h1>
-          <h2
-            style={{
-              color: `#ffffff`,
-              fontSize: `1vw`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
-            }}
-          >
-            A ÚLTIMA TECNOLOGIA EM FLUXO DE PACIENTES
-          </h2>
-        </div>
-        <StaticImage
-          src="../images/bolsa.png"
-          quality={100}
-          placeholder="blurred"
-          layout="fixed"
-        />
-        <div class="text-white">
-          <h1
-            style={{
-              color: `#ffffff`,
-              fontSize: `1.5vw`,
-              textAlign: `left`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            MINI SHOPPING
-          </h1>
-          <h2
-            style={{
-              color: `#ffffff`,
-              fontSize: `1vw`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              paddingTop: `4vh`,
-            }}
-          >
-            ESTRUTURA COMPLETA
-          </h2>
-        </div>
-        <button
-          style={{
-            gridColumn: `span 4 / span 4`,
-            padding: `1vw`,
-            zIndex: `1`,
-            backgroundColor: `##ffffff`,
-            marginRight: `3vw`,
-            textAlign: `center`,
-            fontSize: `1vw`,
-            lineHeight: `1.75vw`,
-            width: `11vw`,
-            borderRadius: `9999px`,
-            letterSpacing: `0.1vw`,
-            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            color: `#033415`,
-            marginBottom: `5vh`,
-            marginTop: `5vh`,
-          }}
-        >
-          RESERVE JÁ
-        </button>
       </div>
     </section>
     <section
@@ -423,6 +459,7 @@ const IndexPage = () => (
           letterSpacing: `0.63em`,
           color: `#ffffff`,
           textShadow: `8px 13px 17px rgba(0, 0, 0, 0.55)`,
+          zIndex: `0`,
         }}
       >
         A MELHOR <br /> EXPERIÊNCIA
@@ -470,7 +507,7 @@ const IndexPage = () => (
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
-          paddingTop: `30vh`,
+          paddingTop: `20vh`,
         }}
       >
         LOBBY
@@ -483,7 +520,7 @@ const IndexPage = () => (
           textAlign: `center`,
           letterSpacing: `0.63em`,
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-
+          paddingBottom:`20vh`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
         }}
@@ -529,6 +566,7 @@ const IndexPage = () => (
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
           paddingLeft: `5vw`,
+          paddingBottom:`20vh`
         }}
       >
         CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E
