@@ -4,10 +4,7 @@ import { Link } from "gatsby"
 
 function Header() {
   return (
-    <div
-      style={{ display: `flex`, flexDirection: `row` }}
-      class="flex flex-row justify-between w-full"
-    >
+    <div style={{ display: `flex`, flexDirection: `row`,width:`100%`, justifyContent:`space-between`,}} >
       <StaticImage
         src="../images/logo.svg"
         style={{ width: `14vw`, height: `16vw` }}
@@ -15,7 +12,7 @@ function Header() {
         formats={["AUTO", "WEBP", "AVIF"]}
       />
       <div style={{ paddingTop: `5vw`, paddingRight: `3vw` }}>
-        <ul style={{display:'flex',flexDirection:'row',textAlign:"center",width:`100%`,placeItems:`center`}}>
+        <ul style={{display:'flex',flexDirection:'row',textAlign:"center",width:`100%`,placeItems:`center`,	listStyle: `none`}}>
           <Link
             to="/"
             style={{

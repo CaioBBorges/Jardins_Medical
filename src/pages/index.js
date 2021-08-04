@@ -13,31 +13,35 @@ import Footer from "../components/footer"
 const IndexPage = () => (
   <div class="">
     <section
-      class="bg-cover bg-local bg-no-repeat"
-      style={{ backgroundImage: `url(${inovador})` }}
+      style={{
+        backgroundImage: `url(${inovador})`,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+      }}
     >
       <title>JARDINS</title>
       <link rel="icon" href="..\images\favicon.ico" />
       <Header />
       <div style={{ paddingTop: `10vh` }}>
-        <div class="text-justify text-white ">
-          <h1
-            style={{
-              paddingLeft: `5vw`,
-              paddingBottom: `20vh`,
-              lineHeight: `13vh`,
-              textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
-              fontSize: `3vw`,
-              fontFamily: "mono",
-              letterSpacing: `2vh`,
-            }}
-          >
-            INOVADOR,
-            <br />
-            SURPRENDENTE
-            <br />E TECNOLÓGICO
-          </h1>
-        </div>
+        <h1
+          style={{
+            color: `#ffffff`,
+            paddingLeft: `5vw`,
+            paddingBottom: `20vh`,
+            lineHeight: `13vh`,
+            textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
+            fontSize: `3vw`,
+            fontFamily: "mono",
+            letterSpacing: `2vh`,
+            textAlign: `justify`,
+          }}
+        >
+          INOVADOR,
+          <br />
+          SURPRENDENTE
+          <br />E TECNOLÓGICO
+        </h1>
       </div>
       <div
         style={{
@@ -50,8 +54,11 @@ const IndexPage = () => (
         }}
       >
         <div
-          class="text-white bg-green-dark rounded-xl font-mono"
           style={{
+            backgroundColor: `#033415`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            borderRadius: `0.75rem`,
+            color: `#ffffff`,
             display: "flex",
             paddingLeft: `5vw`,
             paddingRight: `5vw`,
@@ -76,7 +83,7 @@ const IndexPage = () => (
               style={{ stroke: `green`, strokeWidth: `2` }}
             />
           </svg>
-          <p>ALTA RENTABILIDADE</p>{" "}
+          <p>ALTA RENTABILIDADE</p>
           <svg height="50" width="2">
             <line
               x1="0"
@@ -86,7 +93,7 @@ const IndexPage = () => (
               style={{ stroke: `green`, strokeWidth: `2` }}
             />
           </svg>
-          <p>VALORIZAÇÃO IMOBILIÁRIA</p>{" "}
+          <p>VALORIZAÇÃO IMOBILIÁRIA</p>
           <svg height="50" width="2">
             <line
               x1="0"
@@ -101,8 +108,17 @@ const IndexPage = () => (
       </div>
     </section>
     <section
-      style={{ zindex: `0` }}
-      class="w-full h-screen bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50 content-center flex"
+      style={{
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        zindex: `0`,
+        display: `flex`,
+        width: `100%`,
+        height: `80vh`,
+        alignContent: `center`,
+      }}
+      class="bg-gradient-to-tl from-gray-300 via-gray-50 to-gray-50"
     >
       <div
         style={{ padding: `2vw`, width: `100vw` }}
@@ -435,8 +451,8 @@ const IndexPage = () => (
       <h1
         class=" text-black font-mono text-center leading-relaxed  tracking-widest text-6xl font-thin pt-10 pb-10 w-full"
         style={{
-          paddingRight:`15vw`,
-          paddingLeft:`15vw`,
+          paddingRight: `15vw`,
+          paddingLeft: `15vw`,
           fontSize: `4vw`,
           lineHeight: `171.2%`,
           textAlign: `center`,
@@ -452,31 +468,46 @@ const IndexPage = () => (
           paddingBottom: `3vw`,
           paddingTop: `3vw`,
           display: `flex`,
-          height:`15vh`
+          height: `15vh`,
         }}
         class="grid-cols-3 place-self-center bg-green-dark rounded-xl"
       >
-          <StaticImage
-            src="../images/anvisa_e.png"
-            quality={100}
-            style={{ width: `10vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
-            placeholder="blurred"
-            layout="fixed"
-          />
-          <StaticImage
-            src="../images/logo-abnt_e.png"
-            quality={100}
-            style={{ width: `23.8vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
-            placeholder="blurred"
-            layout="fixed"
-          />
-          <StaticImage
-            src="../images/ans_e.png"
-            quality={100}
-            style={{ width: `26.3vw`,height:`10vw`,placeSelf: `center`,paddingRight:`3vw` }}
-            placeholder="blurred"
-            layout="fixed"
-          />
+        <StaticImage
+          src="../images/anvisa_e.png"
+          quality={100}
+          style={{
+            width: `10vw`,
+            height: `10vw`,
+            placeSelf: `center`,
+            paddingRight: `3vw`,
+          }}
+          placeholder="blurred"
+          layout="fixed"
+        />
+        <StaticImage
+          src="../images/logo-abnt_e.png"
+          quality={100}
+          style={{
+            width: `23.8vw`,
+            height: `10vw`,
+            placeSelf: `center`,
+            paddingRight: `3vw`,
+          }}
+          placeholder="blurred"
+          layout="fixed"
+        />
+        <StaticImage
+          src="../images/ans_e.png"
+          quality={100}
+          style={{
+            width: `26.3vw`,
+            height: `10vw`,
+            placeSelf: `center`,
+            paddingRight: `3vw`,
+          }}
+          placeholder="blurred"
+          layout="fixed"
+        />
       </div>
     </section>
     <Footer />
