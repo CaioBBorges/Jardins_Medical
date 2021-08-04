@@ -494,22 +494,28 @@ const IndexPage = () => (
       </p>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
+        width: "100%",
         backgroundImage: `url(${rooftop})`,
-        paddingLeft: `5vw`,
+        backgroundSize: `100%`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        justifyContent: "center",
       }}
     >
       <h1
         class="text-white font-mono leading-relaxed tracking-widest text-9xl font-thin pt-60 w-full"
         style={{
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontSize: `8vw`,
+          fontHeight: `100`,
           lineHeight: `170%`,
           textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `4px 9px 17px rgba(0, 0, 0, 0.35)`,
-          paddingTop: `30vh`,
+          paddingTop: `20vh`,
+          paddingLeft:`4.7vw`
         }}
       >
         ROOFTOP
@@ -517,13 +523,16 @@ const IndexPage = () => (
       <p
         class="text-white font-bold font-mono leading-relaxed tracking-widest "
         style={{
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          fontHeight: `700`,
           fontSize: `1vw`,
           lineHeight: `170%`,
           textAlign: `left`,
           letterSpacing: `0.63em`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
-          paddingBottom: `30vh`,
+          paddingBottom: `20vh`,
+          paddingLeft: `5vw`,
         }}
       >
         CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E
@@ -531,14 +540,18 @@ const IndexPage = () => (
       </p>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full justify-center bg-clip-border"
       style={{
+        width: "100%",
         backgroundImage: `url(${auditorio})`,
+        backgroundSize: `100%`,
+        backgroundRepeat: `no-repeat`,
+        backgroundAttachment: `local`,
+        justifyContent: "center",
       }}
     >
       <h1
-        class="font-mono tracking-widest"
         style={{
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontSize: `8vw`,
           fontHeight: `100`,
           lineHeight: `170%`,
@@ -552,8 +565,9 @@ const IndexPage = () => (
         AUDITÓRIO <br /> PRINCIPAL
       </h1>
       <p
-        class="font-bold font-mono tracking-widest "
         style={{
+          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          fontHeight: `700`,
           fontSize: `1vw`,
           lineHeight: `170%`,
           textAlign: `right`,
@@ -564,20 +578,28 @@ const IndexPage = () => (
           paddingRight: `5vw`,
         }}
       >
-        AUDOTÓTIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
+        AUDOTÓRIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
         SAÚDE , TRAZENDO A JOÃO <br /> PESSOA UM LOCAL DE CAPACITAÇÃO E
         APRIMORAMENTO
       </p>
     </section>
-    <section style={{ width:`100%`,display:`flex`,flexDirection:`column`,textAlign:`center`,justifyContent:`center` }}
-    class="bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white">
+    <section
+      style={{
+        width: `100%`,
+        display: `flex`,
+        flexDirection: `column`,
+        textAlign: `center`,
+        justifyContent: `center`,
+      }}
+      class="bg-clip-border bg-gradient-to-tl from-gray-300 via-white to-white"
+    >
       <h1
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontWeight: `100`,
           padding: `10vh`,
           fontSize: `5vw`,
-          lineHeight: `171.2%`,
+          lineHeight: `1.2`,
           textAlign: `center`,
           letterSpacing: `0.63em`,
           color: ``,
@@ -588,20 +610,22 @@ const IndexPage = () => (
       </h1>
       <div
         style={{
-          padding:`3vw`,
+          padding: `3vw`,
           display: `flex`,
+          flexDirection: `row`,
           height: `15vh`,
+          placeSelf: `center`,
+          backgroundColor: `#2E2E2E`,
+          marginBottom: `10vw`,
+          borderRadius: `2rem`,
         }}
-        class="grid-cols-3 place-self-center bg-green-dark rounded-xl"
       >
         <StaticImage
           src="../images/anvisa_e.png"
           quality={100}
           style={{
-            width: `10vw`,
-            height: `10vw`,
             placeSelf: `center`,
-            paddingRight: `3vw`,
+            margin: `5vw`,
           }}
           placeholder="blurred"
           layout="fixed"
@@ -610,10 +634,8 @@ const IndexPage = () => (
           src="../images/logo-abnt_e.png"
           quality={100}
           style={{
-            width: `23.8vw`,
-            height: `10vw`,
             placeSelf: `center`,
-            paddingRight: `3vw`,
+            margin: `5vw`,
           }}
           placeholder="blurred"
           layout="fixed"
@@ -622,10 +644,8 @@ const IndexPage = () => (
           src="../images/ans_e.png"
           quality={100}
           style={{
-            width: `26.3vw`,
-            height: `10vw`,
             placeSelf: `center`,
-            paddingRight: `3vw`,
+            margin: `5vw`,
           }}
           placeholder="blurred"
           layout="fixed"
