@@ -105,60 +105,67 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        zIndex: `0`,
         display: `flex`,
         width: `100%`,
-        alignContent: `center`,
         backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
+        alignItems: `center`,
+        alignContent: `center`,
+        placeItems: `center`,
+        placeContent: `center`,
       }}
     >
       <div
         style={{
-          width: `80vw`,
-          paddingTop: `10vh`,
-          paddingBottom: `10vh`,
-          display: `grid`,
-          alignItems: `center`,
+          paddingTop: `20vw`,
+          paddingBottom: `20vw`,
+          paddingRight: `2vw`,
+          paddingLeft: `5vw`,
+          width: `50vh`,
         }}
-        class="grid-cols-2"
       >
-        <div style={{ paddingRight: `2vw`, paddingLeft: `2vw` }}>
-          <StaticImage src="../images/Mask Group.png" quality={100} />
-        </div>
-        <div>
-          <h2
-            style={{
-              fontSize: `4vw`,
-              lineHeight: `3.5vw`,
-              textAlign: `right`,
-              letterSpacing: `1vw`,
-              color: `#2E2E2E`,
-              wordBreak: `break-word`,
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            }}
-          >
-            UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
-          </h2>
-          <p
-            style={{
-              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-              fontSize: `1.6vw`,
-              lineHeight: `1.6vw`,
-              textAlign: `justify`,
-              letterSpacing: `0.48em`,
-              color: `#2E2E2E`,
-              paddingTop: `5vh`,
-              paddingLeft: `2vw`,
-            }}
-          >
-            O Jardins Medical traz um novo conceito de excelência, com espaços
-            amplos de atendimento, localização privilegiada E arquitetura
-            inovadora, Contará com profissionais que são referência em suas
-            áreas. todo projeto busca o melhor resultado para o paciente, e
-            também para o profissional de saúde. Estarão disponíveis para venda
-            salas para uso exclusivo da área de saúde.
-          </p>
-        </div>
+        <StaticImage src="../images/Mask Group.png" quality={100} />
+      </div>
+      <div
+        style={{
+          paddingTop: `20vw`,
+          paddingBottom: `20vw`,
+          paddingRight: `5vw`,
+          paddingLeft: `2vw`,
+          width: `50vh`,
+        }}
+      >
+        <h2
+          style={{
+            fontSize: `4vw`,
+            lineHeight: `3.5vw`,
+            textAlign: `right`,
+            letterSpacing: `1vw`,
+            color: `#2E2E2E`,
+            wordBreak: `break-word`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+          }}
+        >
+          UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
+        </h2>
+        <p
+          style={{
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            fontSize: `1.6vw`,
+            lineHeight: `1.6vw`,
+            textAlign: `justify`,
+            letterSpacing: `0.48em`,
+            color: `#2E2E2E`,
+            paddingTop: `5vh`,
+            paddingLeft: `2vw`,
+          }}
+        >
+          O Jardins Medical traz um novo conceito de excelência, com espaços
+          amplos de atendimento, localização privilegiada E arquitetura
+          inovadora, Contará com profissionais que são referência em suas áreas.
+          todo projeto busca o melhor resultado para o paciente, e também para o
+          profissional de saúde. Estarão disponíveis para venda salas para uso
+          exclusivo da área de saúde.
+        </p>
       </div>
     </section>
     <section
@@ -193,7 +200,6 @@ const IndexPage = () => (
           <h1
             style={{
               padding: `3vw`,
-              width: `100%`,
               fontSize: `2vw`,
               lineHeight: `140%`,
               letterSpacing: `0.195em`,
@@ -210,13 +216,16 @@ const IndexPage = () => (
               display: `flex`,
               flexDirection: `row`,
               justifyContent: `space-between`,
+              padding: `3vw`,
+              height: `10vh`,
             }}
           >
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/compass.png"
                 quality={100}
-                style={{ height: `8vw`, width: `8vw` }}
                 placeholder="blurred"
                 layout="fixed"
               />
@@ -242,14 +251,14 @@ const IndexPage = () => (
                 </h2>
               </div>
             </div>
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/carro.png"
                 quality={100}
                 placeholder="blurred"
                 layout="fixed"
-                width={100}
-                height={100}
               />
               <div>
                 <h1
@@ -279,14 +288,16 @@ const IndexPage = () => (
               display: `flex`,
               flexDirection: `row`,
               justifyContent: `space-between`,
+              padding: `3vw`,
+              height: `10vh`,
             }}
           >
-            {" "}
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/medica.png"
                 quality={100}
-                style={{ height: `8vw`, width: `8vw` }}
                 placeholder="blurred"
                 layout="fixed"
               />
@@ -312,14 +323,14 @@ const IndexPage = () => (
                 </h2>
               </div>
             </div>
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/anvisa.png"
                 quality={100}
                 placeholder="blurred"
                 layout="fixed"
-                width={100}
-                height={100}
               />
               <div>
                 <h1
@@ -349,14 +360,16 @@ const IndexPage = () => (
               display: `flex`,
               flexDirection: `row`,
               justifyContent: `space-between`,
+              padding: `3vw`,
+              height: `10vh`,
             }}
           >
-            {" "}
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/elevador.png"
                 quality={100}
-                style={{ height: `8vw`, width: `8vw` }}
                 placeholder="blurred"
                 layout="fixed"
               />
@@ -382,14 +395,14 @@ const IndexPage = () => (
                 </h2>
               </div>
             </div>
-            <div style={{ display: `flex`, flexDirection: `row` }}>
+            <div
+              style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
+            >
               <StaticImage
                 src="../images/bolsa.png"
                 quality={100}
                 placeholder="blurred"
                 layout="fixed"
-                width={100}
-                height={100}
               />
               <div>
                 <h1
@@ -494,7 +507,6 @@ const IndexPage = () => (
         backgroundImage: `url(${lobby})`,
         paddingLeft: `20vw`,
         paddingRight: `20vw`,
-        height: `80vh`,
       }}
     >
       <h1
@@ -520,7 +532,7 @@ const IndexPage = () => (
           textAlign: `center`,
           letterSpacing: `0.63em`,
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-          paddingBottom:`20vh`,
+          paddingBottom: `20vh`,
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
         }}
@@ -530,7 +542,6 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        height: `80vh`,
         backgroundImage: `url(${rooftop})`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
@@ -566,7 +577,7 @@ const IndexPage = () => (
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
           paddingLeft: `5vw`,
-          paddingBottom:`20vh`
+          paddingBottom: `20vh`,
         }}
       >
         CONCEITO ARQUITETÔNICO PARA PROPORCIONAR MAIS <br /> QUALIDADE E
@@ -575,7 +586,6 @@ const IndexPage = () => (
     </section>
     <section
       style={{
-        height: `80vh`,
         width: "100%",
         backgroundImage: `url(${auditorio})`,
         backgroundSize: `cover`,
@@ -610,6 +620,7 @@ const IndexPage = () => (
           color: `#FFFFFF`,
           textShadow: `0px 4px 7px rgba(0, 0, 0, 0.85)`,
           paddingRight: `5vw`,
+          paddingBottom: `20vh`,
         }}
       >
         AUDOTÓRIO PARA 100 LUGARES , ONDE HAVERÃO <br /> EVENTOS PERIÓDICOS DA
@@ -631,7 +642,7 @@ const IndexPage = () => (
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontWeight: `1rem`,
-          padding: `10vw`,
+          paddingTop: `10vw`,
           fontSize: `5vw`,
           lineHeight: `1`,
           textAlign: `center`,
@@ -644,10 +655,9 @@ const IndexPage = () => (
       </h1>
       <div
         style={{
-          padding: `2vw`,
+          marginTop: `10vh`,
           display: `flex`,
           flexDirection: `row`,
-          height: `15vh`,
           placeSelf: `center`,
           backgroundColor: `#2E2E2E`,
           borderRadius: `2rem`,
@@ -656,47 +666,34 @@ const IndexPage = () => (
           marginBottom: `10vh`,
         }}
       >
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            alignContent: `center`,
-            alignSelf: `center`,
-          }}
-        >
+        <div>
           <StaticImage
+            style={{ padding: `10vw` }}
             src="../images/anvisa_e.png"
             quality={100}
+            fit="inside"
             placeholder="blurred"
             layout="fixed"
           />
         </div>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            alignContent: `center`,
-            alignSelf: `center`,
-          }}
-        >
+
+        <div>
           <StaticImage
+            style={{ padding: `10vw` }}
             src="../images/logo-abnt_e.png"
             quality={100}
+            fit={`inside`}
             placeholder="blurred"
             layout="fixed"
           />
         </div>
-        <div
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            alignContent: `center`,
-            alignSelf: `center`,
-          }}
-        >
+
+        <div>
           <StaticImage
+            style={{ padding: `10vw` }}
             src="../images/ans_e.png"
             quality={100}
+            fit={`inside`}
             placeholder="blurred"
             layout="fixed"
           />
