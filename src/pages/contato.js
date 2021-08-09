@@ -26,7 +26,6 @@ const contato = () => (
                 letterSpacing: `0.63em`,
                 color: `#FFFFFF`,
                 textAlign: `center`,
-                letterSpacing: `0.63em`,
                 textShadow: `0px 4px 12px rgba(0, 0, 0, 0.25), 0px 4px 16px rgba(0, 0, 0, 0.8), 4px 9px 46px rgba(0, 0, 0, 0.8)`,
               }}
             >
@@ -46,7 +45,12 @@ const contato = () => (
           </div>
         </div>
         <form
-          style={{ paddingRight: `2vw`, paddingLeft: `2vw`,display:`flex`,flexDirection:`column` }}
+          style={{
+            paddingRight: `2vw`,
+            paddingLeft: `2vw`,
+            display: `flex`,
+            flexDirection: `column`,
+          }}
           action="acao mandar mensagem"
           method="post"
         >
@@ -67,11 +71,10 @@ const contato = () => (
               Nome
             </label>
             <input
-              style={{                textAlign: `center`,
-
+              style={{
+                textAlign: `center`,
                 paddingTop: `3vw`,
                 borderRadius: `9999px`,
-                textAlign: `center`,
               }}
               type="text"
               id="name"
@@ -161,10 +164,9 @@ const contato = () => (
             style={{
               width: `30vw`,
               height: `6vh`,
-              marginTop:`3vw`,
-              marginBottom:`10vw`,
-              alignSelf: `center`
-
+              marginTop: `3vw`,
+              marginBottom: `10vw`,
+              alignSelf: `center`,
             }}
             type="submit"
           >

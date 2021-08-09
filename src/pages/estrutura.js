@@ -82,18 +82,17 @@ const estrutura = () => (
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         backgroundAttachment: `local`,
-        zIndex: `0`,
-        textAlign: `center`,
       }}
     >
       <div
         style={{
           paddingTop: `10vh`,
           paddingBottom: `10vh`,
-          paddingRight: `8vw`,
-          paddingLeft: `8vw`,
+width:`80vw`,
+          display: `flex`,
+          flexDirection: `row`,              justifyContent: `space-around`,
+
         }}
-        class="grid grid-cols-4 place-items-center place-content-start"
       >
         <div style={{ paddingRight: `4vw`, width: `18vw` }}>
           <StaticImage
@@ -108,6 +107,8 @@ const estrutura = () => (
               width: `18vw`,
               background: `rgba(255, 255, 255, 0.1)`,
               backdropFilter: `blur(20px)`,
+              display: `flex`,
+              flexDirection: `column`,
             }}
           >
             <h1
@@ -118,7 +119,6 @@ const estrutura = () => (
                 height: `2vw`,
                 padding: `2vw`,
               }}
-              class="font-bold text-white font-mono"
             >
               LOBBY
             </h1>
@@ -130,7 +130,6 @@ const estrutura = () => (
                 height: `18vw`,
                 padding: `2vw`,
               }}
-              class="font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
             >
               LOBBY PERFEITO PARA RECEBER TODO O CORPO MÉDICO E OS PACIENTES,
               IDEAL PARA INFORMAR, GUIAR E ORIENTAR AS PESSOAS PROCURANDO POR
@@ -155,14 +154,10 @@ const estrutura = () => (
           >
             <h1
               style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
-              class="font-bold text-white font-mono"
             >
               SALAS PARA CENTROS <br /> CIRUGICOS{" "}
             </h1>
-            <p
-              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
-              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
-            >
+            <p style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}>
               O JARDINS MEDICAL, OFERECE UMA ESTRUTURA IDEAL PARA CENTROS
               CENTROS CIRURGICOS E SALA DE OPERAÇÕES.
             </p>
@@ -185,14 +180,10 @@ const estrutura = () => (
           >
             <h1
               style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
-              class="font-bold text-white font-mono"
             >
               ROOFTOP
             </h1>
-            <p
-              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
-              class="px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
-            >
+            <p style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}>
               UM AMBIENTE CONFORTÁVEL E ACONCHEGANTE, IDEAL PARA OFERECER
               MOMENTOS DE TRANQUILIDADE A TODOS OS PACIENTES E TERCEIROS.
             </p>
@@ -215,14 +206,10 @@ const estrutura = () => (
           >
             <h1
               style={{ fontSize: `1.5vw`, textAlign: `center`, width: `18vw` }}
-              class="font-bold text-white font-mono"
             >
               AUDITÓRIO
             </h1>
-            <p
-              style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}
-              class="pt-5 px-5 font-thin text-white text-sm leading-relaxed tracking-widest font-mono"
-            >
+            <p style={{ fontSize: `1vw`, textAlign: `center`, width: `18vw` }}>
               UM LOCAL PARA INCENTIVAR PALESTRAS E REUNIÕES DE PESQUISA E
               ATUAÇÕES DOS PROFISSIONAIS DA ÁREA DA SAÚDE.
             </p>
@@ -231,13 +218,11 @@ const estrutura = () => (
       </div>
     </section>
     <section
-      class="bg-cover bg-center bg-no-repeat w-full h-5/6  justify-center bg-clip-border"
       style={{
         backgroundImage: `url(${bg4})`,
       }}
     >
       <h1
-        class="font-thin"
         style={{
           fontWeight: `100`,
           paddingTop: `20vh`,
@@ -262,7 +247,6 @@ const estrutura = () => (
           fontSize: `1vw`,
           lineHeight: `1.75vw`,
           width: `11vw`,
-          padding: `1vw`,
           borderRadius: `9999px`,
           letterSpacing: `0.1vw`,
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
@@ -288,7 +272,6 @@ const estrutura = () => (
       }}
     >
       <h1
-        class="font-mono font-thin"
         style={{
           paddingTop: `10vw`,
           paddingRight: `1vw`,
@@ -310,10 +293,9 @@ const estrutura = () => (
           fontSize: `1vw`,
           padding: `4vw`,
         }}
-        class="bg-green-dark grid grid-cols-2 text-white grid-rows-3 w-5/6 rounded-3xl"
       >
         <div>
-          <h1 class="text-xl lg:text-4xl">Circulações Externas e Internas</h1>
+          <h1>Circulações Externas e Internas</h1>
           <ul>
             <li>Acessos</li>
             <li>Estacionamentos</li>
@@ -322,9 +304,7 @@ const estrutura = () => (
           </ul>
         </div>
         <div>
-          <h1 class="text-xl lg:text-4xl">
-            Instalações Prediais Ordinárias e Especiais.
-          </h1>
+          <h1>Instalações Prediais Ordinárias e Especiais.</h1>
           <ul>
             <li>Instalações hidro-sanitárias</li>
             <li>instalações elétricas e eletrônicas</li>
@@ -333,7 +313,7 @@ const estrutura = () => (
           </ul>
         </div>
         <div>
-          <h1 class="text-xl lg:text-4xl">Condições Ambientais de Conforto.</h1>
+          <h1>Condições Ambientais de Conforto.</h1>
           <ul>
             <li>Conforto higrotérmico</li>
             <li>Conforto acústico</li>
@@ -341,44 +321,39 @@ const estrutura = () => (
           </ul>
         </div>
         <div>
-          <h1 class="text-xl lg:text-4xl">
-            Condições de Segurança Contra Incêndio.
-          </h1>
+          <h1>Condições de Segurança Contra Incêndio.</h1>
           <ul>
             <li>Critérios de projeto</li>
             <li>Normatização referente a segurança contra incêndio</li>
           </ul>
         </div>
         <div>
-          <h1 class="text-xl lg:text-4xl">Controle de Infecção Hospitalar</h1>
+          <h1>Controle de Infecção Hospitalar</h1>
           <ul>
             <li>Conceituação Básica</li>
             <li>Critérios de Projeto</li>
           </ul>
         </div>
-        <div class="grid grid-cols-3 place-items-center">
-          <div class="">
+        <div>
+          <div>
             <StaticImage
               src="../images/anvisa_e.png"
-              style={{ width: `4vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"
             />
           </div>
-          <div class=" ">
+          <div>
             <StaticImage
               src="../images/logo-abnt_e.png"
-              style={{ width: `10vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"
             />
           </div>
-          <div class=" ">
+          <div>
             <StaticImage
               src="../images/ans_e.png"
-              style={{ width: `12vw`, height: `4vw` }}
               quality={100}
               placeholder="blurred"
               layout="fixed"

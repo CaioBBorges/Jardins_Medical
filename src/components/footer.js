@@ -10,7 +10,6 @@ function Footer() {
         flexDirection: `row`,
         placeSelf: `center`,
         width: `100%`,
-        flexDirection: `row`,
         justifyContent: `space-around`,
         padding: `2rem`,
         backgroundImage: `linear-gradient(to right, #d1d5db, #ffffff )`,

@@ -45,127 +45,133 @@ const IndexPage = () => (
         SURPRENDENTE
         <br />E TECNOLÓGICO
       </h1>
-
-      <div
-        style={{
-          backgroundColor: `#033415`,
-          fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-          borderRadius: `0.75rem`,
-          color: `#ffffff`,
-          display: "flex",
-          padding: `5vw`,
-          zIndex: `1`,
-          alignItems: `center`,
-          textAlign: `center`,
-          justifyContent: `space-between`,
-          letterSpacing: `.1vh`,
-          fontSize: `1vw`,
-          height: `6vh`,
-          width: `90vw`,
-          lineHeight: `1vw`,
-          justifySelf: "auto",
-          alignSelf: "auto",
-        }}
-      >
-        <p>SEDE EMPRESARIAL</p>
-        <svg
-          style={{
-            height: `8vw`,
-            width: `1vw`,
-            stroke: `green`,
-            strokeWidth: `2`,
-          }}
-        >
-          <line x1="0" y1="0" x2="0" y2="200" />
-        </svg>
-        <p>ALTA RENTABILIDADE</p>
-        <svg
-          style={{
-            height: `8vw`,
-            width: `1vw`,
-            stroke: `green`,
-            strokeWidth: `2`,
-          }}
-        >
-          <line x1="0" y1="0" x2="0" y2="200" />
-        </svg>
-        <p>VALORIZAÇÃO IMOBILIÁRIA</p>
-        <svg
-          style={{
-            height: `8vw`,
-            width: `1vw`,
-            stroke: `green`,
-            strokeWidth: `2`,
-          }}
-        >
-          <line x1="0" y1="0" x2="0" y2="200" />
-        </svg>
-        <p>CONTRATOS ESTICADOS</p>
-      </div>
     </section>
     <section
       style={{
-        display: `flex`,
         width: `100%`,
-        backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
-        alignItems: `center`,
-        alignContent: `center`,
-        placeItems: `center`,
-        placeContent: `center`,
+        background:`transparent`
       }}
     >
       <div
         style={{
-          paddingTop: `20vw`,
-          paddingBottom: `20vw`,
-          paddingRight: `2vw`,
-          paddingLeft: `5vw`,
-          width: `50vh`,
+          marginTop: `10vh`,
+          width: `100%`,
+          backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
         }}
       >
-        <StaticImage src="../images/Mask Group.png" quality={100} />
+        <div
+          style={{
+            backgroundColor: `#033415`,
+            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            borderRadius: `0.75rem`,
+            color: `#ffffff`,
+            display: "flex",
+            padding: `4vw`,
+            alignItems: `center`,
+            justifyContent: `space-between`,
+            letterSpacing: `.1vh`,
+            fontSize: `1vw`,
+            height: `6vh`,
+            width: `90vw`,
+            lineHeight: `1vw`,
+          }}
+        >
+          <p>SEDE EMPRESARIAL</p>
+          <svg
+            style={{
+              height: `8vw`,
+              width: `1vw`,
+              stroke: `#cccccc`,
+              strokeWidth: `2`,
+            }}
+          >
+            <line x1="0" y1="0" x2="0" y2="200" />
+          </svg>
+          <p>ALTA RENTABILIDADE</p>
+          <svg
+            style={{
+              height: `8vw`,
+              width: `1vw`,
+              stroke: `#cccccc`,
+              strokeWidth: `2`,
+            }}
+          >
+            <line x1="0" y1="0" x2="0" y2="200" />
+          </svg>
+          <p>VALORIZAÇÃO IMOBILIÁRIA</p>
+          <svg
+            style={{
+              height: `8vw`,
+              width: `1vw`,
+              stroke: `#cccccc`,
+              strokeWidth: `2`,
+            }}
+          >
+            <line x1="0" y1="0" x2="0" y2="200" />
+          </svg>
+          <p>CONTRATOS ESTICADOS</p>
+        </div>
       </div>
+
       <div
         style={{
-          paddingTop: `20vw`,
-          paddingBottom: `20vw`,
-          paddingRight: `5vw`,
-          paddingLeft: `2vw`,
-          width: `50vh`,
+          display: `flex`,
+          width: `100%`,
+          backgroundImage: `linear-gradient(to right, #ffffff, #d1d5db )`,
+          alignItems: `center`,
+          alignContent: `center`,
+          placeItems: `center`,
+          placeContent: `center`,
         }}
       >
-        <h2
+        <div
           style={{
-            fontSize: `4vw`,
-            lineHeight: `3.5vw`,
-            textAlign: `right`,
-            letterSpacing: `1vw`,
-            color: `#2E2E2E`,
-            wordBreak: `break-word`,
-            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            width: `50vw`,
+            padding: `5vh`,
           }}
         >
-          UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
-        </h2>
-        <p
+          <StaticImage src="../images/Mask Group.png" quality={100} />
+        </div>
+        <div
           style={{
-            fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
-            fontSize: `1.6vw`,
-            lineHeight: `1.6vw`,
-            textAlign: `justify`,
-            letterSpacing: `0.48em`,
-            color: `#2E2E2E`,
-            paddingTop: `5vh`,
-            paddingLeft: `2vw`,
+            paddingTop: `10vh`,
+            paddingBottom: `10vh`,
+            width: `50vw`,
+            paddingRight: `3vw`,
           }}
         >
-          O Jardins Medical traz um novo conceito de excelência, com espaços
-          amplos de atendimento, localização privilegiada E arquitetura
-          inovadora, Contará com profissionais que são referência em suas áreas.
-          todo projeto busca o melhor resultado para o paciente, e também para o
-          profissional de saúde. Estarão disponíveis para venda salas para uso
-          exclusivo da área de saúde.
-        </p>
+          <h2
+            style={{
+              fontSize: `4vw`,
+              lineHeight: `3.5vw`,
+              textAlign: `right`,
+              letterSpacing: `1vw`,
+              color: `#2E2E2E`,
+              wordBreak: `break-word`,
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+            }}
+          >
+            UM NOVO PADRÃO DE ATENDIMENTO MÉDICO
+          </h2>
+          <p
+            style={{
+              fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+              fontSize: `1.6vw`,
+              lineHeight: `1.6vw`,
+              textAlign: `justify`,
+              letterSpacing: `0.48em`,
+              color: `#2E2E2E`,
+              paddingTop: `5vh`,
+            }}
+          >
+            O Jardins Medical traz um novo conceito de excelência, com espaços
+            amplos de atendimento, localização privilegiada E arquitetura
+            inovadora, Contará com profissionais que são referência em suas
+            áreas. todo projeto busca o melhor resultado para o paciente, e
+            também para o profissional de saúde. Estarão disponíveis para venda
+            salas para uso exclusivo da área de saúde.
+          </p>
+        </div>
       </div>
     </section>
     <section
@@ -295,12 +301,15 @@ const IndexPage = () => (
             <div
               style={{ display: `flex`, flexDirection: `row`, width: `17vw` }}
             >
-              <StaticImage
-                src="../images/medica.png"
-                quality={100}
-                placeholder="blurred"
-                layout="fixed"
-              />
+              <div style={{ width: `17vw` }}>
+                <StaticImage
+                  src="../images/medica.png"
+                  quality={100}
+                  placeholder="blurred"
+                  layout="fixed"
+                />
+              </div>
+
               <div style={{ display: `flex`, flexDirection: `column` }}>
                 <h1
                   style={{
@@ -642,7 +651,7 @@ const IndexPage = () => (
         style={{
           fontFamily: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
           fontWeight: `1rem`,
-          paddingTop: `10vw`,
+          paddingTop: `10vh`,
           fontSize: `5vw`,
           lineHeight: `1`,
           textAlign: `center`,
@@ -676,7 +685,6 @@ const IndexPage = () => (
             layout="fixed"
           />
         </div>
-
         <div>
           <StaticImage
             style={{ padding: `10vw` }}
@@ -687,7 +695,6 @@ const IndexPage = () => (
             layout="fixed"
           />
         </div>
-
         <div>
           <StaticImage
             style={{ padding: `10vw` }}
